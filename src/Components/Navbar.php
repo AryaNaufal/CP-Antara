@@ -31,7 +31,7 @@
           <a class="smooth-menu" href="#home">Home</a>
         </li>
         <li>
-          <a class="smooth-menu" href="#home">Tentang Kami</a>
+          <a class="smooth-menu" href="#about">Tentang Kami</a>
         </li>
         <li>
           <a class="smooth-menu" href="#home">Produk & Layanan</a>
@@ -40,10 +40,10 @@
           <a class="smooth-menu" href="#home">Mitra Kerja</a>
         </li>
         <li>
-          <a class="smooth-menu" href="#home">Publikasi</a>
+          <a class="smooth-menu" href="#article">Publikasi</a>
         </li>
         <li>
-          <a class="smooth-menu" href="#home">Kontak Kami</a>
+          <a class="smooth-menu" href="#footer">Kontak Kami</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -52,7 +52,7 @@
       <!-- Start Atribute Navigation -->
       <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px;">
         <ul>
-          <li class="button"><a href="contact.html" style="color: white;">Pertanyaan</a></li>
+          <li class="button"><a href="#" style="color: white;">Pertanyaan</a></li>
         </ul>
       </div>
       <!-- End Atribute Navigation -->

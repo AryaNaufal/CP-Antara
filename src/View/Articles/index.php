@@ -1,19 +1,67 @@
-<!-- Start Breadcrumb 
-    ============================================= -->
-<div class="breadcrumb-area shadow dark bg-cover text-center text-light" style="background-image: url(assets/img/2440x1578.png);">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <h1>Blog Grid</h1>
-        <ul class="breadcrumb">
-          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#">Blog</a></li>
+<!-- Start Navigation -->
+<nav class="navbar mobile-sidenav navbar-common navbar-sticky navbar-default validnavs">
+
+
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="assets/img/antara/logo.png" class="logo" alt="Logo">
+      </a>
+    </div>
+    <!-- End Header Navigation -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+
+      <img src="assets/img/antara/logo.png" alt="Logo">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+        <i class="fa fa-times"></i>
+      </button>
+
+      <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+        <li>
+          <a class="smooth-menu" href="/#home">Home</a>
+        </li>
+        <li>
+          <a class="smooth-menu" href="/#about">Tentang Kami</a>
+        </li>
+        <li>
+          <a class="smooth-menu" href="#home">Produk & Layanan</a>
+        </li>
+        <li>
+          <a class="smooth-menu" href="#home">Mitra Kerja</a>
+        </li>
+        <li>
+          <a class="smooth-menu" href="/#article">Publikasi</a>
+        </li>
+        <li>
+          <a class="smooth-menu" href="#footer">Kontak Kami</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+    <div class="attr-right">
+      <!-- Start Atribute Navigation -->
+      <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px;">
+        <ul>
+          <li class="button"><a href="#" style="color: white;">Pertanyaan</a></li>
         </ul>
       </div>
+      <!-- End Atribute Navigation -->
     </div>
+
+    <!-- Main Nav -->
   </div>
-</div>
-<!-- End Breadcrumb -->
+  <!-- Overlay screen for menu -->
+  <div class="overlay-screen"></div>
+  <!-- End Overlay screen for menu -->
+</nav>
+<!-- End Navigation -->
 
 <!-- Start Blog
     ============================================= -->

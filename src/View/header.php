@@ -27,6 +27,5 @@
 </head>
 
 <body>
-  <div class="se-pre-con"></div>
+  <!-- <div class="se-pre-con"></div> -->
 
-  <?php include __DIR__ . '/../Components/Navbar.php'; ?>

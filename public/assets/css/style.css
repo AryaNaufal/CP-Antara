@@ -78,7 +78,7 @@ Table of contents
 	--dark: #040836;
 	--dark-secondary: #202942;
 	--white: #ffffff;
-	--color-primary: #5138ee;
+	--color-primary: #AA0A2F;
 	--color-secondary: #02ebad;
 	--color-heading: #202942;
 	--color-paragraph: #666666;
@@ -443,17 +443,17 @@ input {
 	background-size: cover;
 }
 
-.bg-gray {
+/* .bg-gray {
 	background-color: #edf5ff;
-}
+} */
 
 .bg-light {
 	background-color: var(--white) !important;
 }
 
-.bg-dark {
+/* .bg-dark {
 	background-color: var(--dark) !important;
-}
+} */
 
 .bg-theme {
 	background-color: var(--color-primary);
@@ -542,7 +542,7 @@ input {
 }
 
 .default-padding {
-	padding-top: 120px;
+	padding-top: 60px;
 	padding-bottom: 120px;
 }
 
@@ -3346,7 +3346,8 @@ body,
 
 .choose-us-area .info h4 {
 	font-weight: 900;
-	color: var(--color-primary);
+	/* color: var(--color-primary); */
+	color: #AA0A2F;
 }
 
 .choose-us-area .info h2 {
@@ -4775,7 +4776,8 @@ ul.achivement li .medium {
 .blog-area .item .date span {
 	display: block;
 	font-size: 14px;
-	background: var(--color-primary);
+	/* background: var(--color-primary); */
+	background: #AA0A2F;
 	color: var(--white);
 	padding: 0 19px;
 	border-radius: 0 0 8px 8px;
@@ -5841,7 +5843,7 @@ ul.pagination {
 /* Main Footer */
 
 footer .f-items .f-item.contact-widget {
-	position: relative;
+	/* position: relative; */
 	z-index: 1;
 }
 
@@ -5878,7 +5880,7 @@ footer .f-items .f-item form {
 }
 
 footer .f-items .f-item form input {
-	background: #283353;
+	/* background: #283353; */
 	color: var(--white);
 	border: 1px dashed rgba(255, 255, 255, 0.1);
 	font-size: 14px;
@@ -5887,7 +5889,8 @@ footer .f-items .f-item form input {
 
 footer .f-items .f-item form input::-webkit-input-placeholder {
 	/* Chrome/Opera/Safari */
-	color: #adb5bd;
+	color: #2B2C2E;
+	font-weight: 500;
 }
 
 footer .f-items .f-item form input::-moz-placeholder {
@@ -6003,7 +6006,7 @@ footer .footer-bottom {
 	padding: 30px 0;
 	z-index: 1;
 	position: relative;
-	background: var(--dark);
+	/* background: var(--dark); */
 }
 
 footer .footer-bottom ul li {
