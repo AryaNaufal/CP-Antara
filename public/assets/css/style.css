@@ -75,7 +75,7 @@ Table of contents
 	--font-heading: 'Manrope', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
-	--dark: #040836;
+	--dark: #202942;
 	--dark-secondary: #202942;
 	--white: #ffffff;
 	--color-primary: #AA0A2F;
@@ -87,7 +87,7 @@ Table of contents
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--box-shadow-extra: 0 5px 50px 0 rgba(0, 0, 0, 0.15);
 	--bg-gray: #edf5ff;
-	--bg-gradient: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+	--bg-gradient: linear-gradient(45deg, #940D19 0%, #AA0A2F 50%);
 }
 
 
@@ -443,24 +443,23 @@ input {
 	background-size: cover;
 }
 
-/* .bg-gray {
-	background-color: #edf5ff;
-} */
+.bg-gray {
+	background-color: #f9f9f9;
+}
 
 .bg-light {
 	background-color: var(--white) !important;
 }
 
-/* .bg-dark {
+.bg-dark {
 	background-color: var(--dark) !important;
-} */
+}
 
 .bg-theme {
 	background-color: var(--color-primary);
 }
 
 .bg-gradient {
-	/* background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%) !important; */
 	background: linear-gradient(45deg, #940D19 0%, #AA0A2F 50%) !important;
 }
 
@@ -547,7 +546,7 @@ input {
 }
 
 .default-padding-top {
-	padding-top: 120px;
+	padding-top: 150px;
 }
 
 .default-padding-bottom {
@@ -5881,7 +5880,7 @@ footer .f-items .f-item form {
 
 footer .f-items .f-item form input {
 	/* background: #283353; */
-	color: var(--white);
+	/* color: var(--white); */
 	border: 1px dashed rgba(255, 255, 255, 0.1);
 	font-size: 14px;
 	padding-left: 20px;
@@ -6340,6 +6339,7 @@ footer.bg-dark .footer-bottom a:hover {
 	z-index: 1;
 	overflow: hidden;
 	border-radius: 10px;
+	box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
 }
 
 .gallery-items .pf-item .overlay:after {
@@ -6407,12 +6407,12 @@ footer.bg-dark .footer-bottom a:hover {
 .gallery-items .pf-item .overlay .content>a {
 	display: inline-block;
 	height: 50px;
-	width: 50px;
+	width: 70px;
 	line-height: 50px;
 	text-align: center;
 	background: var(--color-primary);
 	color: var(--white);
-	border-radius: 50%;
+	border-radius: 10%;
 	transform: translateY(30px);
 	opacity: 0;
 }
@@ -8481,6 +8481,8 @@ a.item.popup-gallery.theme.video-play-button::before {
     border: 1px solid #e7e7e7;
     padding: 30px 50px;
 	background: #fdfdfd;
+	height: 100px;
+	object-fit: contain;
 }
 
 

@@ -174,7 +174,7 @@ Version: 1.0
 
 .navbar-brand>img {
 	display: block;
-	height: 60px;
+	height: 40px;
 }
 
 .navbar-toggle {
@@ -2279,10 +2279,12 @@ nav.navbar.validnavs.brand-center {
 
 	nav.navbar.validnavs.navbar-fixed .logo {
 		display: block !important;
+		height: 40px;
 	}
 
 	nav.navbar.validnavs.navbar-fixed .logo-display {
 		display: none !important;
+		height: 40px;
 	}
 
 	nav.navbar.validnavs.navbar-mobile .tab-menu,
@@ -2597,7 +2599,7 @@ nav.navbar.validnavs.mobile-sidenav .navbar-collapse.collapse.collapse-mobile.sh
 nav.navbar.validnavs .navbar-collapse.collapse img {
 	display: none;
 	margin-bottom: 30px;
-	height: 60px;
+	height: 40px;
 }
 
 nav.navbar.validnavs .navbar-collapse.collapse button {
