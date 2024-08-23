@@ -1,5 +1,5 @@
 <!-- Start Navigation -->
-<nav class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white  no-background">
+<nav class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white " id="nav">
 
 
   <div class="container d-flex justify-content-between align-items-center">
@@ -12,8 +12,8 @@
       <a class="navbar-brand" href="/">
         <!-- <img src="assets/img/logo-light.png" class="logo logo-display" alt="Logo">
         <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo"> -->
-        <img src="assets/img/antara/logo-light.png" class="logo logo-display" alt="Logo">
-        <img src="assets/img/antara/logo.png" class="logo logo-scrolled" alt="Logo">
+        <img src="/assets/img/antara/logo-light.png" class="logo logo-display" alt="Logo">
+        <img src="/assets/img/antara/logo.png" class="logo logo-scrolled" alt="Logo">
       </a>
     </div>
     <!-- End Header Navigation -->
@@ -21,7 +21,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-menu">
 
-      <img src="assets/img/antara/logo.png" alt="Logo">
+      <img src="/assets/img/antara/logo.png" alt="Logo">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
         <i class="fa fa-times"></i>
       </button>
@@ -34,10 +34,10 @@
           <a class="smooth-menu" href="#about">Tentang Kami</a>
         </li>
         <li>
-          <a class="smooth-menu" href="#home">Produk & Layanan</a>
+          <a class="smooth-menu" href="#product">Produk & Layanan</a>
         </li>
         <li>
-          <a class="smooth-menu" href="#home">Mitra Kerja</a>
+          <a class="smooth-menu" href="#partner">Mitra Kerja</a>
         </li>
         <li>
           <a class="smooth-menu" href="#article">Publikasi</a>
@@ -64,3 +64,14 @@
   <!-- End Overlay screen for menu -->
 </nav>
 <!-- End Navigation -->
+
+
+<script>
+  const navbar = document.getElementById('nav');
+
+  if (window.location.pathname === '/') {
+    navbar.classList.add('no-background');
+  } else {
+    navbar.classList.remove('no-background');
+  }
+</script>

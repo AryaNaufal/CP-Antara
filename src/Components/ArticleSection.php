@@ -1,8 +1,8 @@
 <!-- Start Blog 
     ============================================= -->
-<div id="article" class="blog-area default-padding bottom-less" style="background: #f9f9f9;">
+<section id="article" class="blog-area default-padding default-padding-top bottom-less bg-gray">
   <div class="container">
-    <div class="row">
+    <div class="row wow fadeInDown">
       <div class="col-lg-8 offset-lg-2">
         <div class="site-heading text-center">
           <h2>Latest Articles</h2>
@@ -13,12 +13,11 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+
     <div class="row">
 
       <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6">
+      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
         <div class="item">
           <div class="thumb">
             <a href="/article/Judul1"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -47,7 +46,7 @@
       <!-- End Single item -->
 
       <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6">
+      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
         <div class="item">
           <div class="thumb">
             <a href="/article/Judul2"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -76,7 +75,7 @@
       <!-- End Single item -->
 
       <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6">
+      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1000ms">
         <div class="item">
           <div class="thumb">
             <a href="/article/Judul3"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -106,7 +105,7 @@
 
       <div style="display: flex; justify-content: center">
         <!-- Start Atribute Navigation -->
-        <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px; width: max-content;">
+        <div class="wow fadeInUp" style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px; width: max-content;">
           <ul>
             <li class="button"><a href="/articles" style="color: white;">See More</a></li>
           </ul>
@@ -116,5 +115,5 @@
       <!-- Main Nav -->
     </div>
   </div>
-</div>
+</section>
 <!-- End Blog -->

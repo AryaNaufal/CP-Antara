@@ -39,7 +39,8 @@ class Router
     }
 
     http_response_code(404);
-    // echo '404 Not Found';
-    include __DIR__ . '/404.php';
+    View::render('404', [
+      "title" => "Page Not Found",
+    ]);
   }
 }

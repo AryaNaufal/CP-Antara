@@ -1,8 +1,6 @@
-<?php include __DIR__ . '/../Components/Navbar.php'; ?>
-
 <!-- Start Banner 
-    ============================================= -->
-<div class="banner-area text-light bg-gradient banner-style-five text-default" id="home">
+      ============================================= -->
+<section class="banner-area text-light bg-gradient banner-style-five text-default" id="home">
 
   <div class="animated-wave">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -38,8 +36,10 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- End Banner -->
 
-<?php include __DIR__ . '/../Components/About.php'; ?>
-<?php include __DIR__ . '/../Components/ArticleList.php'; ?>
+<?php include __DIR__ . '/../Components/AboutSection.php'; ?>
+<?php include __DIR__ . '/../Components/ProductSection.php'; ?>
+<?php include __DIR__ . '/../Components/PartnerSection.php'; ?>
+<?php include __DIR__ . '/../Components/ArticleSection.php'; ?>

@@ -16,11 +16,10 @@ class ArticleController
   function content(string $articleId): void
   {
     if (!file_exists(__DIR__ . '/../View/Articles/Content/' . $articleId . '.php')) {
-      include __DIR__ . '/../App/404.php';
+      View::render('404', [
+        "title" => "Page Not Found",
+      ]);
     } else {
-      // require __DIR__ . '/../View/header.php';
-      // include __DIR__ . '/../View/Articles/Content/' . $articleId . '.php';
-      // require __DIR__ . '/../View/footer.php';
       View::render("Articles/Content/$articleId", [
         "title" => $articleId,
       ]);

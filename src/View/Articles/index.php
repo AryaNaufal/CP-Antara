@@ -1,78 +1,22 @@
-<!-- Start Navigation -->
-<nav class="navbar mobile-sidenav navbar-common navbar-sticky navbar-default validnavs">
-
-
-  <div class="container d-flex justify-content-between align-items-center">
-
-    <!-- Start Header Navigation -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-        <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="assets/img/antara/logo.png" class="logo" alt="Logo">
-      </a>
-    </div>
-    <!-- End Header Navigation -->
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-menu">
-
-      <img src="assets/img/antara/logo.png" alt="Logo">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-        <i class="fa fa-times"></i>
-      </button>
-
-      <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-        <li>
-          <a class="smooth-menu" href="/#home">Home</a>
-        </li>
-        <li>
-          <a class="smooth-menu" href="/#about">Tentang Kami</a>
-        </li>
-        <li>
-          <a class="smooth-menu" href="#home">Produk & Layanan</a>
-        </li>
-        <li>
-          <a class="smooth-menu" href="#home">Mitra Kerja</a>
-        </li>
-        <li>
-          <a class="smooth-menu" href="/#article">Publikasi</a>
-        </li>
-        <li>
-          <a class="smooth-menu" href="#footer">Kontak Kami</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-
-    <div class="attr-right">
-      <!-- Start Atribute Navigation -->
-      <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px;">
-        <ul>
-          <li class="button"><a href="#" style="color: white;">Pertanyaan</a></li>
-        </ul>
-      </div>
-      <!-- End Atribute Navigation -->
-    </div>
-
-    <!-- Main Nav -->
-  </div>
-  <!-- Overlay screen for menu -->
-  <div class="overlay-screen"></div>
-  <!-- End Overlay screen for menu -->
-</nav>
-<!-- End Navigation -->
-
 <!-- Start Blog
     ============================================= -->
-<div class="blog-area full-blog blog-standard full-blog grid-colum default-padding">
+<section class="blog-area full-blog blog-standard full-blog grid-colum default-padding default-padding-top">
   <div class="container">
+    <div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class=""><a href="/">Home</a></li>
+          <span class="mx-2"> > </span>
+          <li aria-current="page" style="font-weight: 600; color: #AA0A2F;"><?= $model['title'] ?></li>
+        </ol>
+      </nav>
+    </div>
     <div class="blog-items content-less">
       <div class="blog-content">
         <div class="blog-item-box">
           <div class="row">
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -101,7 +45,7 @@
             </div>
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-delay="500ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -130,7 +74,7 @@
             </div>
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-delay="800ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -159,7 +103,7 @@
             </div>
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -188,7 +132,7 @@
             </div>
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-delay="500ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -217,7 +161,7 @@
             </div>
             <!-- End Single Item -->
             <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 single-item">
+            <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-delay="1000ms">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img src="assets/img/800x600.png" alt="Thumb"></a>
@@ -265,5 +209,5 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- End Blog -->

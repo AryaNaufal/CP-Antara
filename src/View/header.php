@@ -21,11 +21,12 @@
   <link href="/assets/css/validnavs.css" rel="stylesheet" />
   <link href="/assets/css/helper.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/style.css" rel="stylesheet">
+  <link href="/assets/css/service-slider.css" rel="stylesheet">
   <link href="/assets/css/responsive.css" rel="stylesheet" />
   <!-- ========== End Stylesheet ========== -->
 </head>
 
 <body>
-  <!-- <div class="se-pre-con"></div> -->
-
+  <header>
+    <?php include __DIR__ . '/../Components/Navbar.php'; ?>
+  </header>
