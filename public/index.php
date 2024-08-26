@@ -8,6 +8,7 @@ use Aryan\CpAntara\Controller\HomeController;
 use Aryan\CpAntara\Controller\ProductController;
 
 Router::add('GET', '/', HomeController::class, 'index', []);
+Router::add('GET', '/test', HomeController::class, 'test', []);
 Router::add('GET', '/articles', ArticleController::class, 'index', []);
 Router::add('GET', '/article/([0-9a-zA-Z]*)', ArticleController::class, 'content', []);
 Router::add('GET', '/products', ProductController::class, 'index', []);

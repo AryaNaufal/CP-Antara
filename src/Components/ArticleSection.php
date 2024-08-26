@@ -16,92 +16,41 @@
 
     <div class="row">
 
-      <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
-        <div class="item">
-          <div class="thumb">
-            <a href="/article/Judul1"><img src="assets/img/800x600.png" alt="Thumb"></a>
-            <div class="date"><strong>18</strong> <span>Apr</span></div>
-          </div>
-          <div class="info">
-            <div class="meta">
-              <ul>
-                <li>
-                  <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
-                </li>
-              </ul>
+      <?php
+      $count = 0;
+      foreach ($model['articles'] as $article):
+        if ($count >= 3) break;
+        $count++;
+      ?>
+        <!-- Single item -->
+        <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
+          <div class="item">
+            <div class="thumb">
+              <a href="/article/Judul1"><img src="<?= $article['image'] ?>" alt="Thumb"></a>
+              <div class="date"><strong>18</strong> <span>Apr</span></div>
             </div>
-            <h4>
-              <a href="/article/Judul1">Discovery earnestly public commanded mentions.</a>
-            </h4>
-            <p>
-              Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-            </p>
+            <div class="info">
+              <div class="meta">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fas fa-user-circle"></i> User</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
+                  </li>
+                </ul>
+              </div>
+              <h4>
+                <a href="/article/Judul1"><?= $article['title'] ?></a>
+              </h4>
+              <p>
+                <?= $article['description'] ?? 'No description available.' ?>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- End Single item -->
-
-      <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-        <div class="item">
-          <div class="thumb">
-            <a href="/article/Judul2"><img src="assets/img/800x600.png" alt="Thumb"></a>
-            <div class="date"><strong>25</strong> <span>Aug</span></div>
-          </div>
-          <div class="info">
-            <div class="meta">
-              <ul>
-                <li>
-                  <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-comments"></i> 35 Comments</a>
-                </li>
-              </ul>
-            </div>
-            <h4>
-              <a href="/article/Judul2">Considered imprudence of he friendship boisterous.</a>
-            </h4>
-            <p>
-              Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End Single item -->
-
-      <!-- Single item -->
-      <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1000ms">
-        <div class="item">
-          <div class="thumb">
-            <a href="/article/Judul3"><img src="assets/img/800x600.png" alt="Thumb"></a>
-            <div class="date"><strong>05</strong> <span>Jul</span></div>
-          </div>
-          <div class="info">
-            <div class="meta">
-              <ul>
-                <li>
-                  <a href="#"><i class="fas fa-user-circle"></i> user</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
-                </li>
-              </ul>
-            </div>
-            <h4>
-              <a href="/article/Judul3">Overcame breeding or my concerns removing desirous.</a>
-            </h4>
-            <p>
-              Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End Single item -->
+        <!-- End Single item -->
+      <?php endforeach; ?>
 
       <div style="display: flex; justify-content: center">
         <!-- Start Atribute Navigation -->
