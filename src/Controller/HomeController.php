@@ -7,23 +7,23 @@ use Aryan\CpAntara\Model\NewsModel;
 
 class HomeController
 {
-  private $newsModel;
+	private $newsModel;
 
-  public function __construct()
-  {
-    $this->newsModel = new NewsModel();
-  }
-  public function index()
-  {
-    $articles = $this->newsModel->getTopHeadlines();
+	public function __construct()
+	{
+		$this->newsModel = new NewsModel();
+	}
+	public function index()
+	{
+		$articles = $this->newsModel->getTopHeadlines();
 
-    if ($articles === null || !isset($articles['data'])) {
-      $articles = ['data' => []]; // Menghindari kesalahan jika data tidak valid
-    }
-    
-    View::render('index', [
-      "title" => "Home",
-      "articles" => $articles['data'],
-    ]);
-  }
+		if ($articles === null || !isset($articles['data'])) {
+			$articles = ['data' => []];
+		}
+
+		View::render('index', [
+			"title" => "Home",
+			"articles" => $articles['data'],
+		]);
+	}
 }

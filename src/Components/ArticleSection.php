@@ -21,13 +21,18 @@
       foreach ($model['articles'] as $article):
         if ($count >= 3) break;
         $count++;
+
+        $dateString = $article['isoDate'];
+        $date = new DateTime($dateString);
+        $Month = $date->format('M');
+        $Day = $date->format('d');
       ?>
         <!-- Single item -->
         <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
           <div class="item">
             <div class="thumb">
-              <a href="/article/Judul1"><img src="<?= $article['image'] ?>" alt="Thumb"></a>
-              <div class="date"><strong>18</strong> <span>Apr</span></div>
+              <a href="<?= $article['link'] ?>" target="_blank"><img src="<?= $article['image'] ?>" alt="Thumb"></a>
+              <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
             </div>
             <div class="info">
               <div class="meta">
@@ -41,7 +46,7 @@
                 </ul>
               </div>
               <h4>
-                <a href="/article/Judul1"><?= $article['title'] ?></a>
+                <a href="<?= $article['link'] ?>" target="_blank"><?= $article['title'] ?></a>
               </h4>
               <p>
                 <?= $article['description'] ?? 'No description available.' ?>

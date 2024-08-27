@@ -45,9 +45,19 @@
   width: calc(250px * 14);
 }
 
+.clients-style-one-area.inc-border img:hover {
+  scale: 1.05;
+  transition: 0.2s;
+}
+
 .slider .slide {
   height: 100px;
   margin: 0 10px;
+}
+
+.slider:hover .slide-track,
+.slider:hover .slide-track-reverse {
+  animation-play-state: paused;
 }
 
 @media screen and (max-width: 768px) {
