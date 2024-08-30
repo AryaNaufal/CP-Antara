@@ -67,7 +67,7 @@
   <?php
   $newUrl = str_replace(SERVER_NAME, '', $_SERVER['REQUEST_URI']);
   ?>
-  if (window.location.pathname === '/CP-Antara/') {
+  if (window.location.pathname === '/CP-Antara/' || window.location.pathname === '/') {
     navbar.classList.add('no-background');
   } else {
     navbar.classList.remove('no-background');

@@ -4,7 +4,7 @@ define("TEMPLATE_PARSIAL", 1);
 define("DB_SERVER", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "");
-define("DB_NAME", "contoh");
+define("DB_NAME", "cp_antara");
 define("DB_PORT", "3306");
 
 define("SERVER_NAME", "http://localhost/CP-Antara/");

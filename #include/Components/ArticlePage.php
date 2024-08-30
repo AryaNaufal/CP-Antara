@@ -1,13 +1,3 @@
-<?php
-
-use App\DB;
-
-$DB = new DB();
-$data = $DB->getTopHeadlines();
-
-$articles = $data['data'];
-?>
-
 <!-- Start Blog
     ============================================= -->
 <section class="blog-area full-blog blog-standard full-blog grid-colum default-padding default-padding-top">
@@ -25,13 +15,13 @@ $articles = $data['data'];
             <div class="blog-content">
                 <div class="blog-item-box">
                     <div class="row">
-                        <?php if ($articles !== null && !empty($articles)): ?>
-                            <?php foreach ($articles as $item): ?>
+                        <?php if ($articleData !== null && !empty($articleData)): ?>
+                            <?php foreach ($articleData as $item): ?>
                                 <!-- Single Item -->
                                 <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
                                     <div class="item">
                                         <div class="thumb">
-                                            <a href="<?= htmlspecialchars($item['link']); ?>">
+                                            <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
                                                 <?php if (isset($item['image'])): ?>
                                                     <img src="<?= htmlspecialchars($item['image']); ?>" alt="Thumb"
                                                         style="width: 100%; height: 200px; object-fit: cover;">
@@ -52,7 +42,7 @@ $articles = $data['data'];
                                             </div>
                                             <h4
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                                                <a href="<?= htmlspecialchars($item['link']); ?>">
+                                                <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
                                                     <?= htmlspecialchars($item['title']); ?>
                                                 </a>
                                             </h4>
@@ -60,8 +50,9 @@ $articles = $data['data'];
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                                                 <?= htmlspecialchars($item['description'] ?? 'No description available.'); ?>
                                             </p>
-                                            <a class="btn circle btn-theme-border btn-sm" href="<?= htmlspecialchars($item['link']); ?>">Read
-                                                More</a>
+                                            <a class="btn circle btn-theme-border btn-sm" href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
+                                                Read More
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

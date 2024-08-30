@@ -6491,7 +6491,7 @@ footer.bg-dark .footer-bottom a:hover {
 	content: "";
 	height: 2px;
 	width: 50px;
-	border-bottom: 2px solid #104cba;
+	border-bottom: 2px solid #AA0A2F;
 }
 
 .project-info ul {
@@ -6679,7 +6679,8 @@ footer.bg-dark .footer-bottom a:hover {
 	height: 100%;
 	width: 100%;
 	background: #1d2746;
-	opacity: 0.7;
+	opacity: 1;
+	border-radius: 10px;
 }
 
 .services-details-items .services-sidebar .single-widget.quick-contact .content {

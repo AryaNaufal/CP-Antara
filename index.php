@@ -3,16 +3,22 @@
 include "#include/config.php";
 include "#include/#class/Autoload.php";
 
-use App\DB;
 use App\Lib;
+use App\ArticleService;
+use App\ProductService;
 
-$DB = new DB();
 $Lib = new Lib();
+$productService = new ProductService();
+$articleService = new ArticleService();
 
-$data = $DB->getProducts();
+// get all products
+$products = $productService->getProducts();
 
-$products = $data['products'];
+// get all articles
+$articles = $articleService->getTopHeadlines();
+$articleData = $articles['data'];
 
+// Meta data
 $current_menu = "home";
 $current_sub_menu = NULL;
 $title = "Home";

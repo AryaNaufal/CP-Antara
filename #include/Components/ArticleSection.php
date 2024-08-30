@@ -1,13 +1,3 @@
-<?php
-
-use App\DB;
-
-$DB = new DB();
-$data = $DB->getTopHeadlines();
-
-$articles = $data['data'];
-?>
-
 <!-- Start Blog 
     ============================================= -->
 <section id="article" class="blog-area default-padding default-padding-top bottom-less bg-gray">
@@ -28,7 +18,7 @@ $articles = $data['data'];
 
       <?php
       $count = 0;
-      foreach ($articles as $item):
+      foreach ($articleData as $item):
         if ($count >= 3) break;
         $count++;
 

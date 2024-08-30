@@ -2,55 +2,36 @@
 
 namespace App;
 
+use PDO;
+use PDOException;
+
 class DB
 {
-    private $filePath;
+    private $host;
+    private $dbname;
+    private $username;
+    private $password;
+    private $port;
 
-    public function __construct($filePath = 'Data/productData.json')
+    public function __construct($host, $user, $pass, $db, $port = '3306')
     {
-        $this->filePath = __DIR__ . '/../' . $filePath;
+        $this->host = $host;
+        $this->username = $user;
+        $this->password = $pass;
+        $this->dbname = $db;
+        $this->port = $port;
     }
-    public function getProducts()
+
+    public function getConnection()
     {
-        // Membaca file JSON
-        $data = file_get_contents($this->filePath);
-
-        // Decode JSON menjadi array PHP
-        $decodedData = json_decode($data, true);
-
-        // Cek jika decoding berhasil
-        if (json_last_error() === JSON_ERROR_NONE) {
-            return $decodedData;
-        } else {
-            return [
-                'products' => [],
-                'error' => 'Error decoding JSON.'
-            ];
-        }
-    }
-    public function getTopHeadlines()
-    {
-        // $url = $this->baseUrl . "?q=apple&from=2024-08-01&to=2024-08-26&sortBy=popularity&apiKey=" . $this->apiKey;
-        $url = "https://berita-indo-api-next.vercel.app/api/antara-news/terkini";
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HEADER, true); // Menyertakan header dalam output
-        curl_setopt($ch, CURLOPT_NOBODY, false); // Menyertakan body dalam output
-
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-        curl_close($ch);
-
-        if ($httpCode !== 200) {
-            // Tangani kesalahan HTTP di sini
+        $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};";
+        try {
+            $pdo = new PDO($dsn, $this->username, $this->password);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $pdo;
+        } catch (PDOException $e) {
+            echo "Koneksi gagal: " . $e->getMessage();
             return null;
         }
-
-        // Pisahkan header dari body jika diperlukan
-        $body = substr($response, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
-        return json_decode($body, true);
     }
 }

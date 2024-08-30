@@ -71,7 +71,7 @@
                   </div>
                   <div class="content">
                     <strong>Address:</strong>
-                    5919 Trussville Crossings Pkwy, Birmingham
+                    -
                   </div>
                 </li>
                 <li>
@@ -80,7 +80,7 @@
                   </div>
                   <div class="content">
                     <strong>Email:</strong>
-                    <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                    <a href="mailto:info@validtheme.com">-</a>
                   </div>
                 </li>
                 <li>
@@ -89,7 +89,7 @@
                   </div>
                   <div class="content">
                     <strong>Phone:</strong>
-                    <a href="tel:2151234567">+123 34598768</a>
+                    <a href="tel:2151234567">-</a>
                   </div>
                 </li>
               </ul>
