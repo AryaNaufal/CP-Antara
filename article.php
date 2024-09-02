@@ -17,7 +17,7 @@ $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $page = max($page, 1); // Pastikan halaman tidak kurang dari 1
 
 // Menghitung total halaman
-$totalItems = isset($articles['total']) ?? 0;
+$totalItems = isset($articles['total']) ? $articles['total'] : 0;
 $totalPages = ceil($totalItems / $itemsPerPage); // Bulatkan halaman ke atas supaya total items sesuai
 
 // Ambil data sesuai query parameter halaman / halaman saat ini
