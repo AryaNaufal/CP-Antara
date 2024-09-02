@@ -1,25 +1,3 @@
-# # Aktifkan mod_rewrite
-# RewriteEngine On
-
-# # Jangan lakukan rewrite untuk file atau direktori yang ada
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-
-# # Atur rule untuk root index.php
-# RewriteRule ^index\.php$ index.php [L]
-
-# # Atur rule untuk Products/index.php
-# RewriteRule ^Products/?$ Products/index.php [L]
-
-# # Atur rule untuk Products/Content/index.php
-# RewriteRule ^Products/Content/?$ Products/Content/index.php [L]
-
-# # Atur rule untuk Articles/index.php
-# RewriteRule ^Articles/?$ Articles/index.php [L]
-
-# # Atur rule untuk Articles/Content/index.php
-# RewriteRule ^Articles/Content/?$ Articles/Content/index.php [L]
-
 Options All -Indexes
 
 RewriteEngine On
@@ -32,5 +10,6 @@ RewriteRule ^([^\.]+)$ $1.php [L]
 # Custom 404 error page
 ErrorDocument 404 /CP-Antara/404.php
 
+# uri with query parameters
 RewriteRule ^product/([^/]+) product.php?productId=$1 [NC]
-RewriteRule ^product product.php [NC]
+RewriteRule ^article/([^/]+) article.php?page=$1 [NC]
