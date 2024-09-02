@@ -24,7 +24,7 @@ $products = $productService->getProducts();
 
 // Get all articles
 $articles = $articleService->getTopHeadlines();
-$articleData = $articles['data'];
+$articleData = $articles['data'] ?? null;
 
 // Meta data
 $current_menu = "home";

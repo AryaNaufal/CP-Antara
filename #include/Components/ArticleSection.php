@@ -17,45 +17,49 @@
     <div class="row">
 
       <?php
-      $count = 0;
-      foreach ($articleData as $item):
-        if ($count >= 3) break;
-        $count++;
+      if (empty($articleData)):
+        echo '<p class="text-center">No articles available.</p>';
+      else:
+        $count = 0;
+        foreach ($articleData as $item):
+          if ($count >= 3) break;
+          $count++;
 
-        $dateString = $item['isoDate'];
-        $date = new DateTime($dateString);
-        $Month = $date->format('M');
-        $Day = $date->format('d');
+          $dateString = $item['isoDate'];
+          $date = new DateTime($dateString);
+          $Month = $date->format('M');
+          $Day = $date->format('d');
       ?>
-        <!-- Single item -->
-        <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
-          <div class="item">
-            <div class="thumb">
-              <a href="<?= $item['link'] ?>" target="_blank"><img src="<?= $item['image'] ?>" alt="Thumb"></a>
-              <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
-            </div>
-            <div class="info">
-              <div class="meta">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
-                  </li>
-                </ul>
+          <!-- Single item -->
+          <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
+            <div class="item">
+              <div class="thumb">
+                <a href="<?= $item['link'] ?>" target="_blank"><img src="<?= $item['image'] ?>" alt="Thumb"></a>
+                <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
               </div>
-              <h4>
-                <a href="<?= $item['link'] ?>" target="_blank"><?= $item['title'] ?></a>
-              </h4>
-              <p>
-                <?= $item['description'] ?? 'No description available.' ?>
-              </p>
+              <div class="info">
+                <div class="meta">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fas fa-user-circle"></i> User</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
+                    </li>
+                  </ul>
+                </div>
+                <h4>
+                  <a href="<?= $item['link'] ?>" target="_blank"><?= $item['title'] ?></a>
+                </h4>
+                <p>
+                  <?= $item['description'] ?? 'No description available.' ?>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- End Single item -->
-      <?php endforeach; ?>
+          <!-- End Single item -->
+        <?php endforeach; ?>
+      <?php endif; ?>
 
       <div style="display: flex; justify-content: center">
         <!-- Start Atribute Navigation -->
