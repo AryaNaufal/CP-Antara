@@ -33,7 +33,7 @@
                                             <div class="meta">
                                                 <ul>
                                                     <li>
-                                                        <a href="#"><i class="fas fa-user"></i><?= $item['author'] ?? 'Unknown' ?></a>
+                                                        <a href="#"><i class="fas fa-user"></i><?= htmlspecialchars($item['author'] ?? 'Unknown') ?></a>
                                                     </li>
                                                     <li>
                                                         <a href="#"><i class="fas fa-comments"></i> 27 Comments</a>
@@ -70,11 +70,17 @@
                         <div class="col-md-12 pagi-area text-center">
                             <nav aria-label="navigation">
                                 <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                    <?php if ($page > 1): ?>
+                                        <li class="page-item"><a class="page-link" href="?page=<?= $page - 1; ?>"><i class="fas fa-angle-double-left"></i></a></li>
+                                    <?php endif; ?>
+
+                                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                                        <li class="page-item <?= ($i === $page) ? 'active' : ''; ?>"><a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a></li>
+                                    <?php endfor; ?>
+
+                                    <?php if ($page < $totalPages): ?>
+                                        <li class="page-item"><a class="page-link" href="?page=<?= $page + 1; ?>"><i class="fas fa-angle-double-right"></i></a></li>
+                                    <?php endif; ?>
                                 </ul>
                             </nav>
                         </div>

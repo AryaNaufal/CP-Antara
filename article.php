@@ -8,7 +8,22 @@ $articleService = new ArticleService();
 
 // get all articles
 $articles = $articleService->getTopHeadlines();
-$articleData = $articles['data'];
+
+// Jumlah item per halaman
+$itemsPerPage = 6;
+
+// Ambil halaman saat ini dari query string, default ke 1 jika tidak ada
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$page = max($page, 1); // Pastikan halaman tidak kurang dari 1
+
+// Menghitung total halaman
+$totalItems = isset($articles['total']) ?? 0;
+$totalPages = ceil($totalItems / $itemsPerPage); // Bulatkan halaman ke atas supaya total items sesuai
+
+// Ambil data sesuai query parameter halaman / halaman saat ini
+$articleData = isset($articles['data']) ? $articles['data'] : [];
+$startIndex = ($page - 1) * $itemsPerPage;
+$articleData = array_slice($articleData, $startIndex, $itemsPerPage);
 
 // Meta data
 $current_menu = "Article";
