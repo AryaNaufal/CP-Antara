@@ -6,7 +6,7 @@ First, clone the repository to /htdocs if use xampp and /www if use laragon:
 git clone https://github.com/AryaNaufal/toko-onlen.git
 ```
 
-then, import database the database:
+then, import the database:
 
 ```bash
 mysql -u root -p
