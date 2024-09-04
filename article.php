@@ -30,6 +30,7 @@ $current_menu = "Article";
 $current_sub_menu = NULL;
 $title = "Article";
 
-include __DIR__ . '/header.php';
-include __DIR__ . '/#include/Components/ArticlePage.php';
-include __DIR__ . '/footer.php';
+include_once __DIR__ . '/header.php';
+include_once __DIR__ . '/#include/Components/Navbar.php';
+include_once __DIR__ . '/#include/Components/ArticlePage.php';
+include_once __DIR__ . '/footer.php';

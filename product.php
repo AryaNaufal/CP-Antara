@@ -18,7 +18,8 @@ if (empty($productId)) {
     $current_sub_menu = NULL;
     $title = "Product";
 
-    include_once  __DIR__ . '/header.php';
+    include_once __DIR__ . '/header.php';
+    include_once __DIR__ . '/#include/Components/Navbar.php';
     include_once __DIR__ . '/#include/Components/ProductPage.php';
     include_once __DIR__ . '/footer.php';
 } else {
@@ -44,6 +45,7 @@ if (empty($productId)) {
     $title = $item['name'];
 
     include_once __DIR__ . '/header.php';
+    include_once __DIR__ . '/#include/Components/Navbar.php';
     include_once __DIR__ . '/#include/Components/ProductContent.php';
     include_once __DIR__ . '/footer.php';
 }

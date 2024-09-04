@@ -22,12 +22,10 @@
 	<link href="<?= SERVER_NAME ?>assets/css/style.css" rel="stylesheet" />
 	<link href="<?= SERVER_NAME ?>assets/css/service-slider.css" rel="stylesheet">
 	<link href="<?= SERVER_NAME ?>assets/css/responsive.css" rel="stylesheet" />
+	<link href="<?= SERVER_NAME ?>assets/css/login.css" rel="stylesheet" />
 
 
 	<!-- ========== End Stylesheet ========== -->
 </head>
 
 <body>
-	<header>
-		<?php include __DIR__ . '/#include/Components/Navbar.php'; ?>
-	</header>
