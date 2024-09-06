@@ -49,7 +49,13 @@
         <!-- Start Atribute Navigation -->
         <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px;">
           <ul>
-            <li class="button"><a href="#" style="color: white;">Pertanyaan</a></li>
+            <li class="button">
+              <?php if (!isset($_SESSION['user_id'])): ?>
+                <a href="<?= SERVER_NAME ?>login" style="color: white;">Login</a>
+              <?php else: ?>
+                <a href="<?= SERVER_NAME ?>logout" style="color: white;">Logout</a>
+              <?php endif; ?>
+            </li>
           </ul>
         </div>
         <!-- End Atribute Navigation -->

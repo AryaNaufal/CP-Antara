@@ -40,9 +40,9 @@ if (empty($productId)) {
     }
 
     // Meta data
-    $current_menu =  $item['name'];
+    $current_menu =  $item['name'] ?? null;
     $current_sub_menu = NULL;
-    $title = $item['name'];
+    $title = $item['name'] ?? null;
 
     include_once __DIR__ . '/header.php';
     include_once __DIR__ . '/#include/Components/Navbar.php';

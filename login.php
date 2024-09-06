@@ -15,6 +15,7 @@ $title = "Login";
 
 include_once __DIR__ . '/header.php';
 ?>
+
 <section class="login-area">
     <div class="login-container default-padding">
         <div class="login-wrapper">

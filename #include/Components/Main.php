@@ -22,6 +22,12 @@
             <div class="row align-center">
 
                 <div class="col-lg-6 info">
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] ?> 👋</p>
+                    <?php else: ?>
+                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, Guest-<?= rand(100, 10000) ?> 👋</p>
+                    <?php endif; ?>
+
                     <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Bridging the Digital Divide:
                         Together, Let's Lead
                         Indonesia's Digital Future</h2>
