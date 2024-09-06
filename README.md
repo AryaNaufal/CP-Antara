@@ -3,7 +3,7 @@
 First, clone the repository to /htdocs if use xampp and /www if use laragon:
 
 ```bash
-git clone https://github.com/AryaNaufal/toko-onlen.git
+git clone https://github.com/AryaNaufal/CP-Antara.git
 ```
 
 then, import the database:
