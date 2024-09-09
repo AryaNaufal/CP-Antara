@@ -24,6 +24,7 @@ Version: 1.0
 }
 
 @media (min-width: 992px) {
+
 	.nav-box .container,
 	.nav-box .container-lg,
 	.nav-box .container-md,
@@ -35,6 +36,7 @@ Version: 1.0
 }
 
 @media (min-width: 1200px) {
+
 	.nav-box .container,
 	.nav-box .container-lg,
 	.nav-box .container-md,
@@ -236,7 +238,7 @@ Version: 1.0
 	text-transform: capitalize;
 	font-weight: 700;
 	background: var(--color-primary);
-    color: var(--white);
+	color: var(--white);
 }
 
 .navbar .attr-right .attr-nav li .call {
@@ -360,10 +362,10 @@ Version: 1.0
 }
 
 .validnavs a .badge {
-    background: var(--dark);
-    float: right;
-    position: relative;
-    top: 5px;
+	background: var(--dark);
+	float: right;
+	position: relative;
+	top: 5px;
 }
 
 .nav:before,
@@ -389,7 +391,7 @@ Version: 1.0
 /* * Navbar Main Css * v1.0 */
 
 .navbar .animated {
-    animation-duration: 0.35s !important;
+	animation-duration: 0.35s !important;
 }
 
 nav.validnavs .dropdown.megamenu-fw {
@@ -628,13 +630,13 @@ nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li a 
 }
 
 nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li p {
-    margin: 0;
-    font-size: 15px;
+	margin: 0;
+	font-size: 15px;
 }
 
 nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list li p .price {
-    font-size: 14px;
-    color: #232323;
+	font-size: 14px;
+	color: #232323;
 }
 
 nav.navbar.navbar-default.validnavs li.dropdown ul.dropdown-menu.cart-list {
@@ -1990,6 +1992,20 @@ nav.navbar.validnavs.brand-center {
 		margin-bottom: -1px;
 	}
 
+	nav.navbar.validnavs .navbar-nav>li>a.login-button {
+		visibility: hidden;
+	}
+
+	@media screen and (max-width: 550px) {
+		nav.navbar.validnavs .navbar-nav>li>a.login-button {
+			visibility: visible;
+			color: white;
+			background-color: #AA0A2F;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	nav.navbar.validnavs .navbar-nav>li:first-child>a {
 		border-top: none;
 	}
@@ -2378,6 +2394,10 @@ nav.navbar.validnavs.brand-center {
 		font-weight: 600;
 		font-size: 14px;
 		text-transform: uppercase;
+	}
+
+	nav.navbar ul.nav>li>a.login-button {
+		visibility: hidden;
 	}
 
 	nav.navbar.attr-border-full ul.nav>li>a,

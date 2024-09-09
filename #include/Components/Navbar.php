@@ -42,6 +42,15 @@
           <li>
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#footer">Kontak Kami</a>
           </li>
+          <li>
+            <a class="login-button" href="<?= SERVER_NAME ?>login" style="">
+              <?php if (!isset($_SESSION['user_id'])): ?>
+                Login
+              <?php else: ?>
+                Logout
+              <?php endif; ?>
+            </a>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
 
