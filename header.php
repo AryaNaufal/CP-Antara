@@ -1,3 +1,24 @@
+<?php
+
+use App\AssetService;
+
+$assetService = new AssetService();
+
+$assets = $assetService->getAssets();
+
+$jsAssets = array_filter($assets, function ($asset) {
+	return filterType('js', $asset);
+});
+
+$cssAssets = array_filter($assets, function ($asset) {
+	return filterType('css', $asset);
+});
+
+function filterType($type, $var)
+{
+	return $var['type'] === $type;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,24 +29,12 @@
 	<link rel="shortcut icon" href="<?= SERVER_NAME ?>assets/img/antara/logo-antara.png" type="image/x-icon">
 	<title><?= $title ?></title>
 	<!-- ========== Start Stylesheet ========== -->
-	<link href="<?= SERVER_NAME ?>assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/font-awesome.min.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/themify-icons.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/elegant-icons.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/flaticon-set.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/magnific-popup.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/owl.carousel.min.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/owl.theme.default.min.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/animate.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/validnavs.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/helper.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/style.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/service-slider.css" rel="stylesheet">
-	<link href="<?= SERVER_NAME ?>assets/css/responsive.css" rel="stylesheet" />
-	<link href="<?= SERVER_NAME ?>assets/css/login.css" rel="stylesheet" />
 
+	<?php foreach ($cssAssets as $asset): ?>
+		<link href="<?= SERVER_NAME . htmlspecialchars($asset['url']) ?>" rel="stylesheet" />
+	<?php endforeach; ?>
 
-	<!-- ========== End Stylesheet ========== -->
+	<!--==========End Stylesheet==========-->
 </head>
 
 <body>
