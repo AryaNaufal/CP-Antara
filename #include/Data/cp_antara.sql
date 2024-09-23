@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2024 at 11:40 AM
+-- Generation Time: Sep 23, 2024 at 04:45 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -20,6 +20,57 @@ SET time_zone = "+00:00";
 --
 -- Database: `cp_antara`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `assets`
+--
+
+CREATE TABLE `assets` (
+  `id` int(255) NOT NULL,
+  `type` enum('css','js','img') NOT NULL,
+  `url` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `assets`
+--
+
+INSERT INTO `assets` (`id`, `type`, `url`) VALUES
+(1, 'css', 'assets/css/bootstrap.min.css'),
+(2, 'css', 'assets/css/font-awesome.min.css'),
+(3, 'css', 'assets/css/themify-icons.css'),
+(4, 'css', 'assets/css/elegant-icons.css'),
+(5, 'css', 'assets/css/flaticon-set.css'),
+(6, 'css', 'assets/css/magnific-popup.css'),
+(7, 'css', 'assets/css/owl.carousel.min.css'),
+(8, 'css', 'assets/css/owl.theme.default.min.css'),
+(9, 'css', 'assets/css/animate.css'),
+(10, 'css', 'assets/css/validnavs.css'),
+(11, 'css', 'assets/css/helper.css'),
+(12, 'css', 'assets/css/style.css'),
+(13, 'css', 'assets/css/service-slider.css'),
+(14, 'css', 'assets/css/responsive.css'),
+(15, 'css', 'assets/css/login.css'),
+(16, 'js', 'assets/js/jquery-3.6.0.min.js'),
+(17, 'js', 'assets/js/popper.min.js'),
+(18, 'js', 'assets/js/bootstrap.bundle.min.js'),
+(19, 'js', 'assets/js/jquery.appear.js'),
+(20, 'js', 'assets/js/jquery.easing.min.js'),
+(21, 'js', 'assets/js/jquery.magnific-popup.min.js'),
+(22, 'js', 'assets/js/modernizr.custom.13711.js'),
+(23, 'js', 'assets/js/owl.carousel.min.js'),
+(24, 'js', 'assets/js/wow.min.js'),
+(25, 'js', 'assets/js/progress-bar.min.js'),
+(26, 'js', 'assets/js/isotope.pkgd.min.js'),
+(27, 'js', 'assets/js/imagesloaded.pkgd.min.js'),
+(28, 'js', 'assets/js/count-to.js'),
+(29, 'js', 'assets/js/YTPlayer.min.js'),
+(30, 'js', 'assets/js/validnavs.js'),
+(31, 'js', 'assets/js/main.js'),
+(32, 'css', 'assets/css/chatbot.css'),
+(33, 'js', 'assets/js/chatbot.js');
 
 -- --------------------------------------------------------
 
@@ -71,6 +122,12 @@ CREATE TABLE `user` (
 --
 
 --
+-- Indexes for table `assets`
+--
+ALTER TABLE `assets`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -86,6 +143,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `assets`
+--
+ALTER TABLE `assets`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `user`
