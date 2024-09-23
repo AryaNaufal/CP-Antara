@@ -25,7 +25,7 @@
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] ?> 👋</p>
                     <?php else: ?>
-                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, Guest-<?= rand(100, 10000) ?> 👋</p>
+                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] = "Guest-" . rand(100, 10000) ?> 👋</p>
                     <?php endif; ?>
 
                     <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Bridging the Digital Divide:

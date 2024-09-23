@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "#include/config.php";
 include "#include/#class/Autoload.php";
 include  "vendor/autoload.php";
