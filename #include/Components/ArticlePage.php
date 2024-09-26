@@ -17,6 +17,12 @@
                     <div class="row">
                         <?php if ($articleData !== null && !empty($articleData)): ?>
                             <?php foreach ($articleData as $item): ?>
+                                <?php
+                                $dateString = $item['isoDate'];
+                                $date = new DateTime($dateString);
+                                $Month = $date->format('M');
+                                $Day = $date->format('d');
+                                ?>
                                 <!-- Single Item -->
                                 <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
                                     <div class="item">
@@ -27,7 +33,7 @@
                                                         style="width: 100%; height: 200px; object-fit: cover;">
                                                 <?php endif; ?>
                                             </a>
-                                            <div class="date"><strong>24</strong> <span>Sep</span></div>
+                                            <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
                                         </div>
                                         <div class="info">
                                             <div class="meta">
