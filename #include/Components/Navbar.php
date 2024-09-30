@@ -25,22 +25,25 @@
 
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#home">Home</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#home">Beranda</a>
           </li>
           <li>
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#about">Tentang Kami</a>
           </li>
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#product">Produk & Layanan</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#client">Klien</a>
           </li>
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#partner">Mitra Kerja</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#product">Produk</a>
+          </li>
+          <li>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#partner">Mitra</a>
           </li>
           <li>
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#article">Publikasi</a>
           </li>
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#footer">Kontak Kami</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#footer">Kontak</a>
           </li>
           <li>
             <a class="login-button" href="<?= SERVER_NAME ?>login" style="">
@@ -60,9 +63,9 @@
           <ul>
             <li class="button">
               <?php if (!isset($_SESSION['user_id'])): ?>
-                <a href="<?= SERVER_NAME ?>login" style="color: white;">Login</a>
+                <a href="<?= SERVER_NAME ?>login" style="color: white;">Masuk</a>
               <?php else: ?>
-                <a href="<?= SERVER_NAME ?>logout" style="color: white;">Logout</a>
+                <a href="<?= SERVER_NAME ?>logout" style="color: white;">Keluar</a>
               <?php endif; ?>
             </li>
           </ul>

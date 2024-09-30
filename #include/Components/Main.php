@@ -28,9 +28,7 @@
                         <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] = "Guest-" . rand(100, 10000) ?> 👋</p>
                     <?php endif; ?>
 
-                    <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Bridging the Digital Divide:
-                        Together, Let's Lead
-                        Indonesia's Digital Future</h2>
+                    <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Menjembatani Kesenjangan Digital: Bersama, Mari Pimpin Masa Depan Digital Indonesia</h2>
                     <p class="wow fadeInLeft" data-wow-delay="500ms">
                         Menawarkan solusi multimedia berkualitas global, memimpin era baru dalam industri ini. Kami berkomitmen untuk memberikan produk berkualitas tinggi, menjadi pilihan utama bagi pengguna yang mencari kualitas internasional. </p>
                 </div>

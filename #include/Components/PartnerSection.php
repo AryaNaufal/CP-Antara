@@ -2,7 +2,7 @@
     ============================================= -->
 <section class="clients-style-one-area inc-border default-padding default-padding-top text-center" id="partner">
   <div class="site-heading text-center wow fadeInDown">
-    <h2>Our partners</h2>
+    <h2>Mitra Kami</h2>
     <div class="devider"></div>
   </div>
   <div class="container">

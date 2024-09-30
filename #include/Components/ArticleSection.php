@@ -5,10 +5,10 @@
     <div class="row wow fadeInDown">
       <div class="col-lg-8 offset-lg-2">
         <div class="site-heading text-center">
-          <h2>Latest Articles</h2>
+          <h2>Publikasi Terkini</h2>
           <div class="devider"></div>
           <p>
-            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
+            Kami menghadirkan publikasi terkini yang informatif dan relevan untuk mendukung pemahaman Anda terhadap isu-isu terkini.
           </p>
         </div>
       </div>

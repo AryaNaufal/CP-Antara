@@ -9,7 +9,7 @@
 
       <div class="col-lg-6 info">
         <div class="item-box wow fadeInRight" data-wow-default="300ms">
-          <h4>About us</h4>
+          <h4>Tentang Kami</h4>
           <h2>ANTARA menyajikan informasi<br> terupdate dengan Sentuhan Inovatif</h2>
           <p>
             Sejak didirikan 87 tahun silam, Antara telah menjelma menjadi raksasa multimedia yang tak tergoyahkan. Tak hanya berkutat pada penyajian berita, kini Antara melebarkan sayapnya dengan menghadirkan berbagai produk multimedia kelas dunia. Visi menjadi kantor berita terdepan di dunia menjadi kompas yang menuntun langkah Antara dalam berinovasi dan bertransformasi.

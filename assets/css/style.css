@@ -1474,7 +1474,7 @@ body,
 }
 
 .banner-area h2 {
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 800;
 	margin-bottom: 25px;
 	line-height: 1.4;
@@ -8483,7 +8483,7 @@ a.item.popup-gallery.theme.video-play-button::before {
 	border: 1px solid #e7e7e7;
 	padding: 30px 30px;
 	background: #fdfdfd;
-	height: 140px;
+	height: 120px;
 	width: 280px;
 	object-fit: contain;
 }

@@ -1,8 +1,8 @@
 <!-- Star Clients Area
     ============================================= -->
-<section class="clients-style-one-area inc-border default-padding default-padding-top text-center" id="partner">
+<section class="clients-style-one-area inc-border default-padding default-padding-top text-center" id="client">
     <div class="site-heading text-center wow fadeInDown">
-        <h2>Our client</h2>
+        <h2>Klien Kami</h2>
         <div class="devider"></div>
     </div>
     <div class="container">
@@ -19,9 +19,7 @@
                             $count++;
                         ?>
                             <div class="slide" title="<?= htmlspecialchars($client['name']) ?>">
-                                <a href="#">
                                     <img src="<?= $client['image'] ?>" alt="Partner">
-                                </a>
                             </div>
                         <?php endforeach; ?>
 
@@ -34,9 +32,7 @@
                             $count++;
                         ?>
                             <div class="slide" title="<?= htmlspecialchars($client['name']) ?>">
-                                <a href="#">
                                     <img src="<?= $client['image'] ?>" alt="Partner">
-                                </a>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -58,11 +54,10 @@
                         for ($i = 8; $i < 16 && $i < count($clients); $i++):
                         ?>
                             <div class="slide" title="<?= htmlspecialchars($clients[$i]['name']) ?>">
-                                <a href="#">
                                     <img src="<?= $clients[$i]['image'] ?>" alt="Partner">
-                                </a>
                             </div>
                         <?php endfor; ?>
+
                         <?php
                         $count = 0;
 
@@ -75,9 +70,7 @@
                         for ($i = 8; $i < 16 && $i < count($clients); $i++):
                         ?>
                             <div class="slide" title="<?= htmlspecialchars($clients[$i]['name']) ?>">
-                                <a href="#">
                                     <img src="<?= $clients[$i]['image'] ?>" alt="Partner">
-                                </a>
                             </div>
                         <?php endfor; ?>
                     </div>

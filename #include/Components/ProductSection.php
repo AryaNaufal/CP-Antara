@@ -2,7 +2,7 @@
     ============================================= -->
 <section class="clients-style-one-area inc-border default-padding-top text-center bg-gray" id="product">
 	<div class="site-heading text-center wow fadeInDown">
-		<h2>Our product & services</h2>
+		<h2>Produk Kami</h2>
 		<div class="devider"></div>
 	</div>
 	<div class="container">
