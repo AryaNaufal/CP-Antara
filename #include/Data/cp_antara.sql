@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 23, 2024 at 04:45 AM
+-- Generation Time: Oct 01, 2024 at 09:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -75,6 +75,40 @@ INSERT INTO `assets` (`id`, `type`, `url`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `client`
+--
+
+CREATE TABLE `client` (
+  `id` int(50) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `client`
+--
+
+INSERT INTO `client` (`id`, `name`, `image`) VALUES
+(1, 'Astra', 'assets/img/antara/client/Astra.png'),
+(2, 'Bank BNI', 'assets/img/antara/client/Bank_BNI.png'),
+(3, 'Bank BRI', 'assets/img/antara/client/Bank_BRI.png'),
+(4, 'Bank Indonesia', 'assets/img/antara/client/Bank_Indonesia.png'),
+(5, 'Bank Mandiri', 'assets/img/antara/client/Bank_Mandiri.png'),
+(6, 'BPJS Kesehatan', 'assets/img/antara/client/BPJS_Kesehatan.png'),
+(7, 'BPJS Ketenagakerjaan', 'assets/img/antara/client/BPJS_Ketenagakerjaan.png'),
+(8, 'CNN Indonesia', 'assets/img/antara/client/CNNindonesia.png'),
+(9, 'DPR', 'assets/img/antara/client/DPR.png'),
+(10, 'Kominfo', 'assets/img/antara/client/Kominfo.png'),
+(11, 'Polri', 'assets/img/antara/client/Polri.png'),
+(12, 'MPR', 'assets/img/antara/client/MPR.png'),
+(13, 'Pertamina', 'assets/img/antara/client/Pertamina.png'),
+(14, 'PLN', 'assets/img/antara/client/PLN.png'),
+(15, 'Shopee', 'assets/img/antara/client/Shopee.png'),
+(16, 'Trans News Corporate', 'assets/img/antara/client/Trans_News_Corporate.png');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product`
 --
 
@@ -101,7 +135,8 @@ INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
 (9, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
 (10, 'Galeri Foto', 'galeri foto', 'assets/img/antara/GaleriFoto.png'),
 (11, 'Layanan Data', 'layanan data', 'assets/img/antara/LayananData.png'),
-(12, 'Aktivasi Strategi Komunikasi', 'aktivasi strategi komunikasi', 'assets/img/antara/AktivasiStrategiKomunikasi.png');
+(12, 'Aktivasi Strategi Komunikasi', 'aktivasi strategi komunikasi', 'assets/img/antara/AktivasiStrategiKomunikasi.png'),
+(13, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png');
 
 -- --------------------------------------------------------
 
@@ -128,6 +163,12 @@ ALTER TABLE `assets`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -149,6 +190,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `assets`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `client`
+--
+ALTER TABLE `client`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user`

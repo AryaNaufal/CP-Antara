@@ -8,7 +8,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Sekolah Jurnalistik Terbaik, Terhubung Langsung dengan Industri Media</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 <span style="color: #aa0a2f; font-weight: 700">
                     Lembaga Pendidikan Antara
                 </span>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Temukan Program Pelatihan Jurnalistik yang Sesuai dengan Kebutuhan Anda di Lembaga Pendidikan Antara</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 Data stream real-time dari
                 <span style="color: #aa0a2f; font-weight: 700">
                     Lembaga Pendidikan Antara
@@ -44,7 +44,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Sekolah Jurnalistik Terbaik, Terhubung Langsung dengan Industri Media</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 <span style="color: #aa0a2f; font-weight: 700">
                     Lembaga Pendidikan Antara
                 </span>
@@ -54,7 +54,6 @@
     </div>
 
     <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
-
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <p class="text-center">
                 Daftar sekarang di

@@ -1,49 +1,67 @@
-<div class="col-lg-8 services-single-content">
-    <div class="thumb" style="display: flex; justify-content: center; margin: 50px 0;">
-        <img src="<?= SERVER_NAME . $item['image'] ?>" alt="Thumb" style="image-rendering: optimizeQuality; width: 500px;">
-    </div>
+<div class="col-lg-12 services-single-content" style="overflow: hidden;">
     <h2><?= $item['name'] ?></h2>
-    <p>
-        Layanan distribusi berita ANTARA berbasis web, memberi kemudahan dan kenyamanan dalam mengakses seluruh berita terkini dalam berbagai kategori selama 24 jam setiap hari.
-    </p>
-    <p>
-        Portal berita ANTARA (www.antaranews.com) diluncurkan pada bulan Januari 1996 dengan tujuan memenuhi hak publik untuk mendapatkan informasi yang akurat, lengkap dan bermanfaat secara seketika. Portal ini disajikan dalam dua bahasa agar masyarakat dunia juga dapat mengetahui informasi yang utuh dan kredibel tentang Indonesia saat ini.
-    </p>
-    <p>
-        Ditunjang oleh reputasi ANTARA sebagai salah satu kantor berita terbesar di Asia dan didukung oleh jaringan pemberitaan global, portal ini menawarkan ragam informasi yang telah menjadi acuan dan daya tarik tersendiri bagi para pengguna Internet di seluruh dunia.
-    </p>
-    <p>
-        Dengan halaman terakses (pageviews) mencapai 7 juta setiap bulan yang sepertiga jumlah pengaksesnya berasal dari mancanegara (lihat tabel), peringkat portal ini semakin menanjak berdasarkan data perusahaan pemeringkat situs Alexa.com.
-    </p>
-    <div style="display: flex; flex-direction: column; gap: 15px;">
-        <h2>Beriklan di Portal ANTARA</h2>
-        <strong style="margin-left: 5px;">Portal ANTARA menawarkan berbagai keuntungan bagi pemasang iklan. Di antaranya adalah : </strong>
-        <ol type="1">
-            <li>Reputasi ANTARA sebagai salah satu kantor berita yang kredibel dan terpercaya dapat mengangkat citra bagi produk dan layanan yang ditawarkan para pemasangan iklan. </li>
-            <li>Karakteristik pengunjung yang beragam dan berasal dari berbagai negara di dunia adalah pasar yang potensial bagi produk dan layanan yang ditawarkan para pemasangan iklan. </li>
-            <li>Biaya pemasangan iklan yang terjangkau dapat membantu pemasang iklan menghemat biaya promosinya. </li>
-            <li>Iklan ditempatkan pada posisi-posisi strategis agar pengunjung dapat melihatnya tanpa merasa terganggu. </li>
-            <li>Pengiklan dapat mengganti materi iklannya dua kali dalam sebulan dengan ukuran yang sama. </li>
-            <li>Pengiklan dapat mengetahui data statistik tentang berapa kali iklannya ditampilkan dan berapa banyak pengunjung yang meng-klik iklan tersebut. </li>
-        </ol>
-    </div>
-</div>
 
-<div class="col-lg-4 services-sidebar">
-    <!-- Single Widget -->
-    <div class="project-info">
-        <h3 class="title">Product Information:</h3>
-        <ul>
-            <li>
-                Telp <span>(012) 6679545</span>
-            </li>
-            <li>
-                Email <span>ads [at] antaranews.com, iklan [at] antara.co.id atau humas [at] antara.id</span>
-            </li>
-            <li>
-                Address <span>Jalan Cikini IV No. 11, Cikini, Jakarta Pusat 10350</span>
-            </li>
-        </ul>
+    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">antaranews.com: Portal Berita Terpercaya di Indonesia</h1>
+            <p style="text-align: justify;">
+                <a href="https://www.antaranews.com/" target="_blank"><span style="color: #aa0a2f; font-weight: 700">antaranews.com</span></a>
+                adalah portal berita online terkemuka di Indonesia yang menyajikan berita terkini dan terpercaya dari berbagai wilayah di Indonesia maupun dunia. Sebagai bagian dari
+                <span style="color: #aa0a2f; font-weight: 700">Perum LKBN Antara</span>,
+                kami berkomitmen untuk memberikan informasi yang akurat, lengkap, dan bermanfaat bagi masyarakat. Dengan antarmuka yang user-friendly, Anda dapat dengan mudah mengakses berita dari berbagai kategori seperti politik, ekonomi, sosial, budaya, dan olahraga.
+            </p>
+        </div>
     </div>
-    <!-- Single Widget -->
+
+    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Akses Berita Terkini 24 Jam Nonstop</h1>
+            <p style="text-align: justify;">
+                Dapatkan informasi terbaru seputar Indonesia dan dunia hanya di
+                <a href="https://www.antaranews.com/" target="_blank"><span style="color: #aa0a2f; font-weight: 700">antaranews.com</span></a>.
+                Sebagai portal berita online terdepan di Indonesia, kami memberikan liputan lengkap dan mendalam mengenai berbagai peristiwa penting. Nikmati pengalaman membaca berita yang nyaman dengan tampilan situs yang responsif dan mudah dinavigasi.
+            </p>
+        </div>
+    </div>
+
+    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Berita Terpercaya, Informasi Akurat</h1>
+            <p style="text-align: justify;">
+                <a href="https://www.antaranews.com/" target="_blank"><span style="color: #aa0a2f; font-weight: 700">antaranews.com</span></a>.
+                adalah bagian dari Perum LKBN Antara, kantor berita nasional yang memiliki kredibilitas tinggi. Kami selalu mengutamakan akurasi dan objektivitas dalam setiap pemberitaan. Dengan
+                <a href="https://www.antaranews.com/" target="_blank"><span style="color: #aa0a2f; font-weight: 700">antaranews.com</span></a>,
+                Anda tidak hanya mendapatkan berita, tetapi juga wawasan yang mendalam mengenai berbagai isu terkini.
+            </p>
+        </div>
+    </div>
+
+    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Kunjungi website <a href="https://www.antaranews.com/" target="_blank">www.antaranews.com</a> untuk update berita terkini & terpercaya</h1>
+            <p style="color: #aa0a2f;">Follow juga akun media sosial antaranews.com untuk update berita terbaru.</p>
+            <ul>
+                <li>Youtube: <a href="https://www.youtube.com/@antaranews" target="_blank">@antaranews</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/antaranewscom/" target="_blank">@antaranewscom</a></li>
+                <li>TikTok: <a href="https://www.tiktok.com/@antaranews" target="_blank">@antaranews</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/antaranewsdotcom" target="_blank">@antaranewsdotcom</a></li>
+                <li>X: <a href="https://x.com/antaranews" target="_blank">@antaranews</a></li>
+            </ul>
+        </div>
+    </div>
 </div>

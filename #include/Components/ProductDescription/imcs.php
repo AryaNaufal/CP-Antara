@@ -8,7 +8,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Bangun Komunikasi Korporat yang Kuat dengan IMCS </h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 Komunikasi korporat yang efektif menjadi kunci utama bagi perusahaan untuk membangun citra yang positif, meningkatkan reputasi, dan menjalin hubungan yang kuat dengan para pemangku kepentingan.
                 <span style="color: #aa0a2f; font-weight: 700">
                     IMCS
@@ -24,7 +24,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Keahlian dan Pengalaman yang Terbukti</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 <span style="color: #aa0a2f; font-weight: 700">
                     IMCS
                 </span>
@@ -40,7 +40,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Komunikasi yang Jelas dan Akurat</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 Kami berkomitmen untuk membangun komunikasi yang jelas dan akurat dengan menggunakan data dan informasi yang terpercaya. Kami akan membantu Anda dalam merumuskan pesan yang mudah dipahami dan relevan dengan target audiens Anda.
             </p>
         </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Konsistensi dan Keandalan</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 Kami memastikan konsistensi dalam penyampaian informasi kepada seluruh pemangku kepentingan. Hal ini penting untuk membangun kepercayaan dan menghindari kebingungan.
             </p>
         </div>
@@ -65,7 +65,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Menjangkau Audiens yang Luas</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 <span style="color: #aa0a2f; font-weight: 700">
                     IMCS
                 </span>
@@ -80,7 +80,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Layanan Terintegrasi</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 <span style="color: #aa0a2f; font-weight: 700">
                     IMCS
                 </span>
@@ -96,7 +96,7 @@
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">BICARA DENGAN AHLI HARI INI</h1>
-            <p class="text-justify">
+            <p style="text-align: justify;">
                 Dengan
                 <span style="color: #aa0a2f; font-weight: 700">
                     IMCS
