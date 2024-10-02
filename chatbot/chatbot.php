@@ -4,8 +4,6 @@ session_start();
 if (isset($_GET['message'])) {
     $userMessage = strtolower(trim($_GET['message']));
 
-    sleep(1); // Delay response
-
     $command = [
         'halo' => "Halo! $_SESSION[user_name], Apa kabar?",
         'hai' => "Hai! $_SESSION[user_name], Apa kabar?",

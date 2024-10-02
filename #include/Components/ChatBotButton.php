@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (!isset($_SESSION['chat_history'])) {
     $_SESSION['chat_history'] = [];
 }
