@@ -2,9 +2,11 @@
     <h2><?= $item['name'] ?></h2>
 
     <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
-        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center" style="position: relative;">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/ANTARANEWS_KOMPUTER.png" alt="" style="border-radius: 10px; height: auto;">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/ANTARANEWS_MOBILE.png" alt="" style="border-radius: 10px; width: 60%; height: auto; position: absolute; top: 30%; right: -15%;">
         </div>
+
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">antaranews.com: Portal Berita Terpercaya di Indonesia</h1>
@@ -18,9 +20,12 @@
     </div>
 
     <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
-        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_1.png" alt="" style="height: 150px; margin: 0 5px;">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_2.png" alt="" style="height: 200px; width: auto;">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_3.png" alt="" style="height: 150px; margin: 0 5px;">
         </div>
+
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Akses Berita Terkini 24 Jam Nonstop</h1>
             <p style="text-align: justify;">
@@ -33,7 +38,8 @@
 
     <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_4.png" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_5.png" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -49,12 +55,13 @@
 
     <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_6.png" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_7.png" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Kunjungi website <a href="https://www.antaranews.com/" target="_blank">www.antaranews.com</a> untuk update berita terkini & terpercaya</h1>
-            <p style="color: #aa0a2f;">Follow juga akun media sosial antaranews.com untuk update berita terbaru.</p>
+            <p style="color: #aa0a2f; font-weight: 700">Follow juga akun media sosial antaranews.com untuk update berita terbaru.</p>
             <ul>
                 <li>Youtube: <a href="https://www.youtube.com/@antaranews" target="_blank">@antaranews</a></li>
                 <li>Instagram: <a href="https://www.instagram.com/antaranewscom/" target="_blank">@antaranewscom</a></li>

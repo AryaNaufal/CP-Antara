@@ -1,30 +1,88 @@
-<div class="col-lg-8 services-single-content">
-    <div class="thumb" style="display: flex; justify-content: center; margin: 50px 0;">
-        <img src="<?= SERVER_NAME . $item['image'] ?>" alt="Thumb" style="image-rendering: optimizeQuality; width: 500px;">
-    </div>
+<div class="col-lg-12 services-single-content" style="overflow: hidden;">
     <h2><?= $item['name'] ?></h2>
-    <p>
-        Salah satu produk unggulan dari Kantor Berita ANTARA adalah foto berita. Divisi pemberitaan foto atau lebih akrab disebut ANTARA Foto, memiliki pewarta-pewarta foto jurnalistik yang tersebar di seluruh Indonesia dan tidak diragukan lagi kemampuannya.
-    </p>
-    <p>
-        Kerap kali menjadi <strong>Official Host Photographer</strong> untuk berbagai acara, baik nasional dan internasional, membuat ANTARA Foto semakin teruji kancahnya dalam dunia fotografi jurnalistik. <br>
-        Terikat dengan sejarah perjuangan Indonesia, ANTARA Foto memiliki hak siar, hak jual dan hak publikasi untuk foto-foto dokumentasi <strong>Indonesian Press Photo Service (IPPHOS)</strong>, yang didirikan oleh Mendur Bersaudara.
-    </p>
-    <p>
-        Saat ini, ANTARA Foto memproduksi, mendistribusikan dan menyiarkan foto berita hasil produksi pewarta foto ANTARA yang membidik berbagai peristiwa, seperti politik, ekonomi, olahraga, sosial budaya, lingkungan, dan human interest baik di dalam negeri maupun di luar negeri. Sekitar 70-100 foto berita per hari, dengan format resolusi tinggi <strong>(hi-res)</strong> dihasilkan ANTARA Foto. Berbagai foto jurnalistik karya pewarta foto ANTARA dapat dinikmati melalui situs
-        <a href="https://www.antarafoto.com/" onmouseover="this.style.color='#AA0A2F'" onmouseout="this.style.color='#000'" target="_blank">www.antarafoto.com</a>
-    </p>
-</div>
 
-<div class="col-lg-4 services-sidebar">
-    <!-- Single Widget -->
-    <div class="project-info">
-        <h3 class="title">Product Information:</h3>
-        <ul>
-            <li>
-                <a href="https://www.antarafoto.com/" onmouseover="this.style.color='#AA0A2F'" onmouseout="this.style.color='#000'" target="_blank">www.antarafoto.com</a>
-            </li>
-        </ul>
+    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_1.jpg" alt="" style="border-radius: 5px">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px"></h1>
+            <p style="font-weight: 600; font-size: 20px;">
+                Di era digital, informasi dan visual menjadi elemen penting dalam kehidupan.
+                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>,
+                hadir untuk membawa Anda menyelami keindahan dan keberagaman Indonesia melalui lensa fotografi yang memukau.
+            </p>
+        </div>
     </div>
-    <!-- Single Widget -->
+
+    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_2.jpg" alt="" style="border-radius: 5px">
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Jutaan Foto Berkualitas Tinggi</h1>
+            <p style="text-align: justify;">
+                <span style="color: #aa0a2f; font-weight: 700">
+                    Antara Foto
+                </span>
+                memiliki jutaan gambar yang mendokumentasikan sejarah dan kehidupan Indonesia. Mulai dari momen-momen bersejarah hingga potret kehidupan sehari-hari, semua tersedia dalam resolusi tinggi dan siap pakai.
+            </p>
+        </div>
+    </div>
+
+    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_3.jpg" alt="" style="border-radius: 5px">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Arsip Foto Terlengkap di Indonesia</h1>
+            <p style="text-align: justify;">
+                Sebagai perpustakaan foto jurnalistik terbesar di Indonesia,
+                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                menawarkan koleksi foto yang paling lengkap. Anda akan menemukan berbagai tema, mulai dari politik dan ekonomi hingga budaya dan lingkungan.
+            </p>
+        </div>
+    </div>
+
+    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_4.jpg" alt="" style="border-radius: 5px">
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Inspirasi Tak Terbatas untuk Kreativitas Anda</h1>
+            <p style="text-align: justify;">
+                Dengan beragam pilihan foto,
+                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                adalah sumber inspirasi tak terbatas untuk proyek kreatif Anda. Baik Anda seorang desainer grafis, fotografer, atau pembuat film, Anda akan menemukan foto yang sempurna untuk menghidupkan ide-ide Anda.
+            </p>
+        </div>
+    </div>
+
+    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_5.jpg" alt="" style="border-radius: 5px">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Antara Foto: Solusi Lengkap untuk Kebutuhan Visual Anda</h1>
+            <p style="text-align: justify;">
+                Bergabunglah dengan
+                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                dengan mengunjungi
+                <span style="color: #aa0a2f; font-weight: 700"><a href="https://www.antarafoto.com/" target="_blank">www.antarafoto.com </a></span>
+                hari ini dan temukan dunia visual yang menakjubkan dari Indonesia.
+            </p>
+            <p style="text-align: justify;">
+                Bergabunglah dengan
+                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                dengan mengunjungi www.antarafoto.com hari ini dan temukan dunia visual yang menakjubkan dari Indonesia.
+            </p>
+            <ul style="list-style: none; margin: 0;">
+                <li>Instagram: <a href="https://www.instagram.com/antarafotocom/" target="_blank">@antarafotocom</a></li>
+                <li>X: <a href="https://x.com/antarafoto" target="_blank">@antarafoto</a></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
