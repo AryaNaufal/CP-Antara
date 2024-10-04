@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2024 at 09:42 AM
+-- Generation Time: Oct 04, 2024 at 12:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -136,7 +136,8 @@ INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
 (10, 'Galeri Foto', 'galeri foto', 'assets/img/antara/GaleriFoto.png'),
 (11, 'Layanan Data', 'layanan data', 'assets/img/antara/LayananData.png'),
 (12, 'Aktivasi Strategi Komunikasi', 'aktivasi strategi komunikasi', 'assets/img/antara/AktivasiStrategiKomunikasi.png'),
-(13, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png');
+(13, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png'),
+(14, 'Branda', 'branda', 'assets/img/antara/Branda.png');
 
 -- --------------------------------------------------------
 
