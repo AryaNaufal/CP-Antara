@@ -1,88 +1,87 @@
-<div class="col-lg-12 services-single-content" style="overflow: hidden;">
+<div class="col-lg-12 services-single-content overflow-hidden">
     <h2><?= $item['name'] ?></h2>
 
-    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 pb-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_1.jpg" alt="" style="border-radius: 5px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_1.jpg" alt="" class="rounded-1">
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px"></h1>
-            <p style="font-weight: 600; font-size: 20px;">
+            <h1 class="fw-bolder fs-2" style="color: #aa0a2f;"></h1>
+            <p class="fw-bold fs-5">
                 Di era digital, informasi dan visual menjadi elemen penting dalam kehidupan.
-                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>,
+                <span style="color: #aa0a2f;">Antara Foto</span>,
                 hadir untuk membawa Anda menyelami keindahan dan keberagaman Indonesia melalui lensa fotografi yang memukau.
             </p>
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_2.jpg" alt="" style="border-radius: 5px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_2.jpg" alt="" class="rounded-1">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
-            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Jutaan Foto Berkualitas Tinggi</h1>
+            <h1 class="fw-bolder fs-2" style="color: #aa0a2f;">Jutaan Foto Berkualitas Tinggi</h1>
             <p style="text-align: justify;">
-                <span style="color: #aa0a2f; font-weight: 700">
-                    Antara Foto
-                </span>
-                memiliki jutaan gambar yang mendokumentasikan sejarah dan kehidupan Indonesia. Mulai dari momen-momen bersejarah hingga potret kehidupan sehari-hari, semua tersedia dalam resolusi tinggi dan siap pakai.
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Foto</span>
+                memiliki jutaan gambar yang mendokumentasikan sejarah dan kehidupan Indonesia.
+                Mulai dari momen-momen bersejarah hingga potret kehidupan sehari-hari, semua tersedia dalam resolusi tinggi dan siap pakai.
             </p>
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_3.jpg" alt="" style="border-radius: 5px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_3.jpg" alt="" class="rounded-1">
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Arsip Foto Terlengkap di Indonesia</h1>
+            <h1 class="fw-bolder fs-2" style="color: #aa0a2f;">Arsip Foto Terlengkap di Indonesia</h1>
             <p style="text-align: justify;">
                 Sebagai perpustakaan foto jurnalistik terbesar di Indonesia,
-                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Foto</span>
                 menawarkan koleksi foto yang paling lengkap. Anda akan menemukan berbagai tema, mulai dari politik dan ekonomi hingga budaya dan lingkungan.
             </p>
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_4.jpg" alt="" style="border-radius: 5px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_4.jpg" alt="" class="rounded-1">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
-            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Inspirasi Tak Terbatas untuk Kreativitas Anda</h1>
+            <h1 class="fw-bolder fs-2" style="color: #aa0a2f;">Inspirasi Tak Terbatas untuk Kreativitas Anda</h1>
             <p style="text-align: justify;">
                 Dengan beragam pilihan foto,
-                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
-                adalah sumber inspirasi tak terbatas untuk proyek kreatif Anda. Baik Anda seorang desainer grafis, fotografer, atau pembuat film, Anda akan menemukan foto yang sempurna untuk menghidupkan ide-ide Anda.
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Foto</span>
+                adalah sumber inspirasi tak terbatas untuk proyek kreatif Anda.
+                Baik Anda seorang desainer grafis, fotografer, atau pembuat film, Anda akan menemukan foto yang sempurna untuk menghidupkan ide-ide Anda.
             </p>
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_5.jpg" alt="" style="border-radius: 5px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraFoto/Picture_5.jpg" alt="" class="rounded-1">
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Antara Foto: Solusi Lengkap untuk Kebutuhan Visual Anda</h1>
+            <h1 class="fw-bolder fs-2" style="color: #aa0a2f; ">Antara Foto: Solusi Lengkap untuk Kebutuhan Visual Anda</h1>
             <p style="text-align: justify;">
                 Bergabunglah dengan
-                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Foto</span>
                 dengan mengunjungi
-                <span style="color: #aa0a2f; font-weight: 700"><a href="https://www.antarafoto.com/" target="_blank">www.antarafoto.com </a></span>
+                <span class="fw-bold" style="color: #aa0a2f;"><a href="https://www.antarafoto.com/" target="_blank">www.antarafoto.com </a></span>
                 hari ini dan temukan dunia visual yang menakjubkan dari Indonesia.
             </p>
-            <p style="text-align: justify;">
-                Bergabunglah dengan
-                <span style="color: #aa0a2f; font-weight: 700">Antara Foto</span>
-                dengan mengunjungi www.antarafoto.com hari ini dan temukan dunia visual yang menakjubkan dari Indonesia.
+            <p class="fw-bold" style="text-align: justify; color: var(--color-heading);">
+                Follow juga akun media sosial
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Foto</span>
+                untuk update berita terbaru.
             </p>
-            <ul style="list-style: none; margin: 0;">
+            <ul class="m-0" style="list-style: none;">
                 <li>Instagram: <a href="https://www.instagram.com/antarafotocom/" target="_blank">@antarafotocom</a></li>
                 <li>X: <a href="https://x.com/antarafoto" target="_blank">@antarafoto</a></li>
             </ul>
         </div>
     </div>
-
 </div>
