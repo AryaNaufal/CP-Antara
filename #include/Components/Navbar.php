@@ -28,10 +28,7 @@
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#home">Beranda</a>
           </li>
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#about">Tentang Kami</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#client">Klien</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#article">Publikasi</a>
           </li>
           <li>
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#product">Produk</a>
@@ -40,7 +37,10 @@
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#partner">Mitra</a>
           </li>
           <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#article">Publikasi</a>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#client">Klien</a>
+          </li>
+          <li>
+            <a class="smooth-menu" href="<?= SERVER_NAME ?>#about">Tentang Kami</a>
           </li>
           <li>
             <a class="smooth-menu" href="<?= SERVER_NAME ?>#footer">Kontak</a>

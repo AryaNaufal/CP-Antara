@@ -2,14 +2,14 @@
     ============================================= -->
 <section class="clients-style-one-area inc-border default-padding-top text-center bg-gray" id="product">
 	<div class="site-heading text-center wow fadeInDown">
-		<h2>Produk Kami</h2>
+		<h2>Produk</h2>
 		<div class="devider"></div>
 	</div>
 	<div class="container">
 		<div class="clients-style-one-box">
 			<div class="row">
-				<div class="col-lg-12 slider">
-					<div class="owl-carousel owl-theme slide-track">
+				<div class="col-lg-12">
+					<div class="partner-carousel owl-carousel owl-theme">
 						<?php
 						$count = 0;
 
@@ -17,25 +17,9 @@
 							if ($count >= 5) break;
 							$count++;
 						?>
-							<div class="slide">
-								<a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($product['slug']) ?>">
-									<img src="<?= $product['image'] ?>" alt="Partner">
-								</a>
-							</div>
-						<?php endforeach; ?>
-
-						<?php
-						$count = 0;
-
-						foreach ($products as $product):
-							if ($count >= 5) break;
-							$count++;
-						?>
-							<div class="slide">
-								<a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($product['slug']) ?>">
-									<img src="<?= $product['image'] ?>" alt="Partner">
-								</a>
-							</div>
+							<a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($product['slug']) ?>">
+								<img src="<?= htmlspecialchars($product['image']) ?>" alt="Partner" class="product-card w-100">
+							</a>
 						<?php endforeach; ?>
 					</div>
 				</div>

@@ -6,10 +6,10 @@
     
 * ================================================================= */
 
-(function($) {
+(function ($) {
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
 
         /* ==================================================
@@ -23,13 +23,13 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-        
+
 
         /* ==================================================
             # Tooltip Init
         ===============================================*/
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
 
         /* ==================================================
             # Banner Animation
@@ -37,10 +37,10 @@
         function doAnimations(elems) {
             //Cache the animationend event in a variable
             var animEndEv = 'webkitAnimationEnd animationend';
-            elems.each(function() {
+            elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
-                $this.addClass($animationType).one(animEndEv, function() {
+                $this.addClass($animationType).one(animEndEv, function () {
                     $this.removeClass($animationType);
                 });
             });
@@ -54,7 +54,7 @@
         //Animate captions in first slide on page load
         doAnimations($firstAnimatingElems);
         //Other slides to be animated on carousel slide event
-        $immortalCarousel.on('slide.bs.carousel', function(e) {
+        $immortalCarousel.on('slide.bs.carousel', function (e) {
             var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
             doAnimations($animatingElems);
         });
@@ -64,16 +64,16 @@
             # Youtube Video Init
          ===============================================*/
         $('.player').mb_YTPlayer({
-            ratio:'4/3',
+            ratio: '4/3',
         });
 
         /* ==================================================
             # imagesLoaded active
         ===============================================*/
-        $('#portfolio-grid,.blog-masonry').imagesLoaded(function() {
+        $('#portfolio-grid,.blog-masonry').imagesLoaded(function () {
 
             /* Filter menu */
-            $('.mix-item-menu').on('click', 'button', function() {
+            $('.mix-item-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
@@ -81,7 +81,7 @@
             });
 
             /* filter menu active class  */
-            $('.mix-item-menu button').on('click', function(event) {
+            $('.mix-item-menu button').on('click', function (event) {
                 $(this).siblings('.active').removeClass('active');
                 $(this).addClass('active');
                 event.preventDefault();
@@ -108,11 +108,11 @@
         });
 
 
-         /* ==================================================
-            # Fun Factor Init
-        ===============================================*/
+        /* ==================================================
+           # Fun Factor Init
+       ===============================================*/
         $('.timer').countTo();
-        $('.fun-fact').appear(function() {
+        $('.fun-fact').appear(function () {
             $('.timer').countTo();
         }, {
             accY: -100
@@ -143,12 +143,12 @@
             fixedContentPos: false
         });
 
-        $('.magnific-mix-gallery').each(function() {
+        $('.magnific-mix-gallery').each(function () {
             var $container = $(this);
             var $imageLinks = $container.find('.item');
 
             var items = [];
-            $imageLinks.each(function() {
+            $imageLinks.each(function () {
                 var $item = $(this);
                 var type = 'image';
                 if ($item.hasClass('magnific-iframe')) {
@@ -172,7 +172,7 @@
                 },
                 type: 'image',
                 callbacks: {
-                    beforeOpen: function() {
+                    beforeOpen: function () {
                         var index = $imageLinks.index(this.st.el);
                         if (-1 !== index) {
                             this.goTo(index);
@@ -189,7 +189,7 @@
         $('.features-carousel').owlCarousel({
             loop: false,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -222,33 +222,43 @@
             }
         });
 
-        
+
         /* ==================================================
             # Partner Carousel
          ===============================================*/
-        $('.partner-carousel').owlCarousel({
-            loop: false,
-            margin: 50,
+        const carousel = $('.partner-carousel');
+
+        carousel.owlCarousel({
+            loop: true,
+            margin: 10,
             nav: false,
-            navText: [
-                "<i class='ti-angle-left'></i>",
-                "<i class='ti-angle-right'></i>"
-            ],
-            dots: false,
+            dots: true,
             autoplay: true,
+            autoplayTimeout: 2000,
+            smartSpeed: 1300,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            autoplayHoverPause: false,
             responsive: {
                 0: {
                     items: 2
                 },
                 600: {
                     items: 3,
-                    margin: 50
+                    margin: 20
                 },
-
                 1000: {
-                    items: 5,
-                    margin: 80
+                    items: 4,
+                    margin: 20
                 }
+            }
+        });
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                carousel.trigger('stop.owl.autoplay');
+            } else {
+                carousel.trigger('play.owl.autoplay');
             }
         });
 
@@ -290,7 +300,7 @@
 
             loop: true,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -303,16 +313,16 @@
                     stagePadding: 300,
                 }
             }
-            
+
         });
 
         /* ==================================================
             # App Screenshot Carousel
          ===============================================*/
-         $('.screenshot-carousel').owlCarousel({
+        $('.screenshot-carousel').owlCarousel({
             loop: true,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -339,10 +349,10 @@
         /* ==================================================
             # Services Carousel
          ===============================================*/
-         $('.services-carousel').owlCarousel({
+        $('.services-carousel').owlCarousel({
             loop: true,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -370,7 +380,7 @@
         /* ==================================================
             # Partner Carousel
          ===============================================*/
-         $('.partner-border-carousel').owlCarousel({
+        $('.partner-border-carousel').owlCarousel({
             loop: false,
             margin: 30,
             nav: false,
@@ -398,7 +408,7 @@
         /* ==================================================
             # Product Gallery Carousel
          ===============================================*/
-         $('.product-gallery-carousel').owlCarousel({
+        $('.product-gallery-carousel').owlCarousel({
             loop: true,
             margin: 15,
             nav: false,
@@ -424,7 +434,7 @@
         /* ==================================================
             # Related Product Carousel
          ===============================================*/
-         $('.related-product-carousel').owlCarousel({
+        $('.related-product-carousel').owlCarousel({
             loop: true,
             margin: 30,
             nav: false,
@@ -454,10 +464,10 @@
         /* ==================================================
             # Testimnial Carousel
          ===============================================*/
-         $('.tesimonial-style-two-carousel').owlCarousel({
+        $('.tesimonial-style-two-carousel').owlCarousel({
             loop: false,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: false,
             autoplay: true,
             items: 1,
@@ -470,10 +480,10 @@
         /* ==================================================
             # Services Carousel
          ===============================================*/
-         $('.services-style-seven-carousel').owlCarousel({
+        $('.services-style-seven-carousel').owlCarousel({
             loop: true,
             nav: false,
-            margin:30,
+            margin: 30,
             dots: true,
             autoplay: true,
             items: 1,
@@ -507,56 +517,56 @@
         /* ==================================================
             Page Swipe
         ================================================== */
-        var $window           = $(window),
-        win_height_padded = $window.height() * 1.1,
-        isTouch           = Modernizr.touch;
-  
-    if (isTouch) { $('.revealOnScroll').addClass('animated'); }
-  
-    $window.on('scroll', revealOnScroll);
-  
-    function revealOnScroll() {
-      var scrolled = $window.scrollTop(),
-          win_height_padded = $window.height() * 1.1;
-  
-      // Showed...
-      $(".revealOnScroll:not(.animated)").each(function () {
-        var $this     = $(this),
-            offsetTop = $this.offset().top;
-  
-        if (scrolled + win_height_padded > offsetTop) {
-          if ($this.data('timeout')) {
-            window.setTimeout(function(){
-              $this.addClass('animated ' + $this.data('animation'));
-            }, parseInt($this.data('timeout'),10));
-          } else {
-            $this.addClass('animated ' + $this.data('animation'));
-          }
+        var $window = $(window),
+            win_height_padded = $window.height() * 1.1,
+            isTouch = Modernizr.touch;
+
+        if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+        $window.on('scroll', revealOnScroll);
+
+        function revealOnScroll() {
+            var scrolled = $window.scrollTop(),
+                win_height_padded = $window.height() * 1.1;
+
+            // Showed...
+            $(".revealOnScroll:not(.animated)").each(function () {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+
+                if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                        window.setTimeout(function () {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        }, parseInt($this.data('timeout'), 10));
+                    } else {
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }
+                }
+            });
+            // Hidden...
+            $(".revealOnScroll.animated").each(function (index) {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+                }
+            });
         }
-      });
-      // Hidden...
-     $(".revealOnScroll.animated").each(function (index) {
-        var $this     = $(this),
-            offsetTop = $this.offset().top;
-        if (scrolled + win_height_padded < offsetTop) {
-          $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
-        }
-      });
-    }
-  
-    revealOnScroll();
+
+        revealOnScroll();
 
 
         /* ==================================================
             Contact Form Validations
         ================================================== */
-        $('.contact-form').each(function() {
+        $('.contact-form').each(function () {
             var formInstance = $(this);
-            formInstance.submit(function() {
+            formInstance.submit(function () {
 
                 var action = $(this).attr('action');
 
-                $("#message").slideUp(750, function() {
+                $("#message").slideUp(750, function () {
                     $('#message').hide();
 
                     $('#submit')
@@ -564,15 +574,15 @@
                         .attr('disabled', 'disabled');
 
                     $.post(action, {
-                            name: $('#name').val(),
-                            email: $('#email').val(),
-                            phone: $('#phone').val(),
-                            comments: $('#comments').val()
-                        },
-                        function(data) {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        phone: $('#phone').val(),
+                        comments: $('#comments').val()
+                    },
+                        function (data) {
                             document.getElementById('message').innerHTML = data;
                             $('#message').slideDown('slow');
-                            $('.contact-form img.loader').fadeOut('slow', function() {
+                            $('.contact-form img.loader').fadeOut('slow', function () {
                                 $(this).remove()
                             });
                             $('#submit').removeAttr('disabled');
@@ -585,35 +595,35 @@
 
     }); // end document ready function
 
-    
-    $(window).scroll(function() {
+
+    $(window).scroll(function () {
 
         /* Background Zoom */
         var scroll = $(window).scrollTop();
         $("#js-hero").css({
-          width: (100 + scroll/5) + "%"
+            width: (100 + scroll / 5) + "%"
         })
 
         /* Image Move */
-        $(".bg-static").each(function() {
+        $(".bg-static").each(function () {
             var windowTop = $(window).scrollTop();
             var elementTop = $(this).offset().top;
             var leftPosition = windowTop - elementTop;
-              $(this)
+            $(this)
                 .find(".bg-move")
                 .css({ left: leftPosition });
-          });
+        });
     })
 
 
-    
-      
+
+
 
 
     /* ==================================================
         Preloader Init
      ===============================================*/
-     $(window).on('load', function() {
+    $(window).on('load', function () {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;
     });

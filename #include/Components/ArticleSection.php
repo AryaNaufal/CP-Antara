@@ -1,6 +1,6 @@
 <!-- Start Blog 
     ============================================= -->
-<section id="article" class="blog-area default-padding default-padding-top bottom-less bg-gray">
+<section id="article" class="blog-area default-padding default-padding-top default-padding-bottom">
   <div class="container">
     <div class="row wow fadeInDown">
       <div class="col-lg-8 offset-lg-2">
