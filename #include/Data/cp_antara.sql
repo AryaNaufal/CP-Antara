@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2024 at 12:25 PM
+-- Generation Time: Oct 09, 2024 at 11:37 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -109,6 +109,37 @@ INSERT INTO `client` (`id`, `name`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `mitra`
+--
+
+CREATE TABLE `mitra` (
+  `id` int(50) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `mitra`
+--
+
+INSERT INTO `mitra` (`id`, `name`, `image`) VALUES
+(1, 'Acn', 'assets/img/antara/mitra/Acnnewswire.png'),
+(2, 'Afp', 'assets/img/antara/mitra/Afp.png'),
+(3, 'Ap-News', 'assets/img/antara/mitra/Ap_News.png'),
+(4, 'Asianet', 'assets/img/antara/mitra/Asianet.png'),
+(5, 'Bernama', 'assets/img/antara/mitra/Bernama.png'),
+(6, 'Bloomberg', 'assets/img/antara/mitra/Bloomberg.png'),
+(7, 'Efe', 'assets/img/antara/mitra/Efe.png'),
+(8, 'Kyodonews', 'assets/img/antara/mitra/Kyodonews.png'),
+(9, 'Oana', 'assets/img/antara/mitra/Oana.png'),
+(10, 'Sputnik', 'assets/img/antara/mitra/Sputnik.png'),
+(11, 'Thomson Reuters', 'assets/img/antara/mitra/Thomson_Reuters.png'),
+(12, 'Ttxvn', 'assets/img/antara/mitra/Ttxvn.png'),
+(13, 'Xinhua News Agency', 'assets/img/antara/mitra/Xinhua_News_Agency.png');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product`
 --
 
@@ -127,17 +158,13 @@ INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
 (1, 'Antara', 'antara', 'assets/img/antara/Antara.png'),
 (2, 'Antara News', 'antara news', 'assets/img/antara/AntaraNews.png'),
 (3, 'IMCS', 'imcs', 'assets/img/antara/IMCS.png'),
-(4, 'Antara PRWIRE', 'antara prwire', 'assets/img/antara/AntaraPRWIRE.png'),
-(5, 'Antara Foto', 'antara foto', 'assets/img/antara/AntaraFoto.png'),
-(6, 'Antara Digital Media', 'antara digital media', 'assets/img/antara/AntaraDigitalMedia.png'),
-(7, 'Antara TV', 'antara tv', 'assets/img/antara/AntaraTV.png'),
-(8, 'MICE', 'mice', 'assets/img/antara/Mice.png'),
-(9, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
-(10, 'Galeri Foto', 'galeri foto', 'assets/img/antara/GaleriFoto.png'),
-(11, 'Layanan Data', 'layanan data', 'assets/img/antara/LayananData.png'),
-(12, 'Aktivasi Strategi Komunikasi', 'aktivasi strategi komunikasi', 'assets/img/antara/AktivasiStrategiKomunikasi.png'),
-(13, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png'),
-(14, 'Branda', 'branda', 'assets/img/antara/Branda.png');
+(4, 'Antara Foto', 'antara foto', 'assets/img/antara/AntaraFoto.png'),
+(5, 'Antara TV', 'antara tv', 'assets/img/antara/AntaraTV.png'),
+(6, 'MICE', 'mice', 'assets/img/antara/Mice.png'),
+(7, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
+(8, 'Layanan Data', 'layanan data', 'assets/img/antara/LayananData.png'),
+(9, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png'),
+(10, 'Branda', 'branda', 'assets/img/antara/Branda.png');
 
 -- --------------------------------------------------------
 
@@ -170,6 +197,12 @@ ALTER TABLE `client`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `mitra`
+--
+ALTER TABLE `mitra`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -197,6 +230,12 @@ ALTER TABLE `assets`
 --
 ALTER TABLE `client`
   MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `mitra`
+--
+ALTER TABLE `mitra`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`
