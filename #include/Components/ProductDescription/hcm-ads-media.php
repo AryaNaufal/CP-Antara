@@ -39,7 +39,7 @@
 
     <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/I-Media.jpg" alt="" class="rounded-1">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/I-MEDIA.jpg" alt="" class="rounded-1">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -54,10 +54,10 @@
     <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
             <div class="row">
-                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON4.jpg" alt="" class="col-6 py-3 rounded-1">
-                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON5.jpg" alt="" class="col-6 py-3 rounded-1">
-                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON12.jpg" alt="" class="col-6 py-3 rounded-1">
-                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON71.jpg" alt="" class="col-6 py-3 rounded-1">
+                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON4.jpg" alt="" class="col-6 p-1 rounded-1">
+                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON5.jpg" alt="" class="col-6 p-1 rounded-1">
+                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON12.jpg" alt="" class="col-6 p-1 rounded-1">
+                <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Hcm/VIDEOTRON71.jpg" alt="" class="col-6 p-1 rounded-1">
             </div>
         </div>
 

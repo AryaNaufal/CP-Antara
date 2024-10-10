@@ -29,7 +29,7 @@
             </ul>
           </div>
         </div>
-        
+
         <!-- Contact Information -->
         <div class="col-lg-6 col-md-12 item">
           <div class="f-item contact-widget">
@@ -102,10 +102,10 @@
         <div class="col-lg-6 text-end link">
           <ul>
             <li>
-              <a href="#">Terms</a>
+              <a href="<?= SERVER_NAME; ?>terms">Terms</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="<?= SERVER_NAME; ?>privacy">Privacy</a>
             </li>
             <li>
               <a href="#">Support</a>
