@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row align-center">
       <div class="col-lg-6 thumb wow fadeInLeft">
-        <img src="assets/img/antara/home_landing_illustration.png" alt="dashboard">
+        <img src="assets/img/antara/home_landing_illustration2.png" alt="dashboard">
       </div>
 
       <div class="col-lg-6 info">

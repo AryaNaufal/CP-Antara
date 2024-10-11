@@ -1,9 +1,9 @@
 <div class="col-lg-12 services-single-content" style="overflow: hidden;">
     <h2><?= $item['name'] ?></h2>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture1.jpg" alt="" style="border-radius: 5px">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -18,9 +18,9 @@
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture2.jpg" alt="" style="border-radius: 5px">
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 style="color: #aa0a2f; font-weight: 800; font-size: 30px">Rumah Bagi Komunitas Kreatif Indonesia</h1>
@@ -37,9 +37,9 @@
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture3.jpg" alt="" style="border-radius: 5px">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -53,9 +53,10 @@
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
-        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center gap-2">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture4.jpeg" alt="" class="rounded-1">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture5.jpeg" alt="" class="rounded-1">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -69,9 +70,10 @@
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
-        <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-            <img src="" alt="" style="image-rendering: optimizeQuality; height: 200px; border-radius: 10px">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center gap-2">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture6.jpeg" alt="" class="rounded-1">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture7.jpeg" alt="" class="rounded-1">
         </div>
 
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -82,16 +84,24 @@
         </div>
     </div>
 
-    <div class="row gap-5 mx-auto my-5 d-flex justify-content-center align-items-center">
+    <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center gap-3">
+            <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Mice/Picture8.jpg" alt="" class="rounded-1">
+        </div>
+
         <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
-            <p class="text-center">
-                Daftar sekarang di
-                <a href="https://lpa.antaranews.com/" target="_blank">
-                    <span style="color: #aa0a2f; font-weight: 700">
-                        www.lpa.antaranews.com
-                    </span>
-                </a>
-                atau cari tahu lebih lanjut di Facebook Sekolah Jurnalistik Antara, X @sekolahantara, LinkedIn Lembaga Pendidikan Antara (LPA), Instagram @sekolahantara.
+            <h1 class="fw-bolder fs-6">
+                Baik untuk acara korporat yang profesional maupun liburan keluarga yang santai,
+                <span class="fw-bold" style="color: #aa0a2f;">Antara Heritage Center</span>
+                dan
+                <span class="fw-bold" style="color: #aa0a2f;">Wisma Grafika</span>
+                siap mengakomodasi semua kebutuhan Anda.
+            </h1>
+            <p>
+                Follow juga akun media sosial Kami untuk cari tahu lebih lanjut.
+            </p>
+            <p>
+                Instagram: <a href="https://www.instagram.com/antaraheritage/" target="_blank">@antaraheritage</a>
             </p>
         </div>
     </div>

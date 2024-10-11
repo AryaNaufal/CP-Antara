@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                    <img src="assets/img/illustration/18.png" alt="Thumb">
+                    <img src="assets/img/antara/home_landing_illustration.png" alt="Thumb">
                 </div>
 
             </div>
