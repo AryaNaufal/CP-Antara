@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2024 at 11:37 AM
+-- Generation Time: Oct 14, 2024 at 09:07 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -155,16 +155,18 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
-(1, 'Antara', 'antara', 'assets/img/antara/Antara.png'),
-(2, 'Antara News', 'antara news', 'assets/img/antara/AntaraNews.png'),
-(3, 'IMCS', 'imcs', 'assets/img/antara/IMCS.png'),
-(4, 'Antara Foto', 'antara foto', 'assets/img/antara/AntaraFoto.png'),
-(5, 'Antara TV', 'antara tv', 'assets/img/antara/AntaraTV.png'),
-(6, 'MICE', 'mice', 'assets/img/antara/Mice.png'),
-(7, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
-(8, 'Layanan Data', 'layanan data', 'assets/img/antara/LayananData.png'),
-(9, 'HCM Ads Media', 'hcm ads media', 'assets/img/antara/Hcm.png'),
-(10, 'Branda', 'branda', 'assets/img/antara/Branda.png');
+(1, 'Antara News', 'antara news', 'assets/img/antara/AntaraNews.png'),
+(2, 'IMCS', 'imcs', 'assets/img/antara/IMCS.png'),
+(3, 'Antara Foto', 'antara foto', 'assets/img/antara/AntaraFoto.png'),
+(4, 'Antara TV', 'antara tv', 'assets/img/antara/AntaraTV.png'),
+(5, 'MICE', 'mice', 'assets/img/antara/Mice.png'),
+(6, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
+(7, 'Layanan Analisa Dan Informasi', 'layanan analisa dan informasi', 'assets/img/antara/LayananAnalisaDanInformasi.png'),
+(8, 'Branda', 'branda', 'assets/img/antara/Branda.png'),
+(9, 'Reuters', 'reuters', 'assets/img/antara/Reuters.png'),
+(10, 'Bloomberg', 'bloomberg', 'assets/img/antara/Bloomberg.png'),
+(11, 'Sewa Perangkat Keras', 'sewa perangkat keras', 'assets/img/antara/SewaPerangkatkeras.png'),
+(12, 'LSEG Data & Analitics', 'lseg', 'assets/img/antara/lseg.png');
 
 -- --------------------------------------------------------
 
