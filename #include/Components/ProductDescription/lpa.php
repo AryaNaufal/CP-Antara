@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPJA/IMG_0799.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPA/lpa-picture-1.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -17,7 +17,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPJA/IMG_9736.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPA/lpa-picture-2.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Temukan Program Pelatihan Jurnalistik yang Sesuai dengan Kebutuhan Anda di Lembaga Pendidikan Antara</h1>
@@ -35,7 +35,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPJA/IMG_6259.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPA/lpa-picture-3.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -49,7 +49,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPJA/IMG_4881.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LPA/lpa-picture-4.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

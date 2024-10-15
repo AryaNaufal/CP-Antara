@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/Picture1.jpg" alt="" style="border-radius: 5px">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/reuters-picture-1.jpg" alt="" style="border-radius: 5px">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -18,7 +18,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/Picture2.jpg" alt="" style="border-radius: 5px">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/reuters-picture-2.jpg" alt="" style="border-radius: 5px">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Fitur Unggulan yang Membedakan</h1>
@@ -42,7 +42,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/Picture3.png" alt="" style="border-radius: 5px">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/reuters-picture-3.png" alt="" style="border-radius: 5px">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -57,7 +57,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center gap-2">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/Picture4.png" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Reuters/reuters-picture-4.png" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center position-relative">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/re2766729-equities-3.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/lseg-picture-1.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -18,7 +18,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/lda3237914-workspace-for-equities-innovative-trading-tools.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/lseg-picture-2.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6">
@@ -33,7 +33,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center position-relative">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/lda3237914-workspace-for-equities-modernised-options.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Lseg/lseg-picture-3.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

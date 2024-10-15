@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture1.jpg" alt="" class="rounded-1" style="height: 200px; object-fit: cover; object-position: right">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-1.jpg" alt="" class="rounded-1" style="height: 200px; object-fit: cover; object-position: right">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -19,7 +19,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture2.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-2.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Keahlian dan Pengalaman yang Terbukti</h1>
@@ -33,7 +33,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture3.jpg" alt="" class="rounded-1" style="height: 200px; object-fit: cover;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-3.jpg" alt="" class="rounded-1" style="height: 200px; object-fit: cover;">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -47,7 +47,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture4.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-4.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Konsistensi dan Keandalan</h1>
@@ -60,7 +60,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture5.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-5.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -75,7 +75,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture6.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-6.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Layanan Terintegrasi</h1>
@@ -89,7 +89,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/Picture7.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/IMCS/imcs-picture-7.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/Picture1.png" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/bloomberg-picture-1.png" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -18,7 +18,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/Picture2.jpeg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/bloomberg-picture-2.jpeg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Bloomberg Terminal: Alat Andalan Profesional Keuangan untuk Analisis Pasar Mendalam</h1>
@@ -32,7 +32,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/Picture3.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Bloomberg/bloomberg-picture-3.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

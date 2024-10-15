@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2453447347.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-1.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -19,7 +19,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_1854622555.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-2.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Persiapkan Diri Anda untuk Karier di Dunia Jurnalistik</h1>
@@ -36,7 +36,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2399811311.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-3.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Mengapa Memilih Antara?</h1>
@@ -63,7 +63,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2391064899.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-4.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6 d-flex justify-content-center flex-wrap">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Percepat Layanan Keuangan Anda dengan Solusi Digital dari Antara</h1>
@@ -79,7 +79,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2299156551.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-5.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6 d-flex justify-content-center flex-wrap">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Lindungi Aset Digital Perusahaan Anda dengan Solusi Keamanan Siber Terbaik dari Antara.</h1>
@@ -95,7 +95,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2471042165.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-6.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6 d-flex justify-content-center flex-wrap">
       <h1 class="fw-bolder fs-2" style="color: var(--color-primary);">Transformasi Digital & Pengembangan Software: Solusi Lengkap untuk Bisnis Anda</h1>
@@ -109,7 +109,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/shutterstock_2462546293.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/LayananAnalisaDanInformasi/layanan-analisa-dan-informasi-picture-7.jpg" alt="" class="rounded-1">
     </div>
     <div class="col-sm-12 col-lg-6 d-flex justify-content-center flex-wrap">
       <h1 class="fw-bolder fs-4">Hubungi kami sekarang untuk mendapatkan data saham secara Real-Time, keamanan siber hingga pengembangan teknologi digital untuk bisnis anda.</h1>

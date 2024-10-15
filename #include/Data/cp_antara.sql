@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2024 at 09:07 AM
+-- Generation Time: Oct 15, 2024 at 04:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -81,7 +81,7 @@ INSERT INTO `assets` (`id`, `type`, `url`) VALUES
 CREATE TABLE `client` (
   `id` int(50) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `image` varchar(50) NOT NULL
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -89,22 +89,25 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id`, `name`, `image`) VALUES
-(1, 'Astra', 'assets/img/antara/client/Astra.png'),
-(2, 'Bank BNI', 'assets/img/antara/client/Bank_BNI.png'),
-(3, 'Bank BRI', 'assets/img/antara/client/Bank_BRI.png'),
-(4, 'Bank Indonesia', 'assets/img/antara/client/Bank_Indonesia.png'),
-(5, 'Bank Mandiri', 'assets/img/antara/client/Bank_Mandiri.png'),
-(6, 'BPJS Kesehatan', 'assets/img/antara/client/BPJS_Kesehatan.png'),
-(7, 'BPJS Ketenagakerjaan', 'assets/img/antara/client/BPJS_Ketenagakerjaan.png'),
-(8, 'CNN Indonesia', 'assets/img/antara/client/CNNindonesia.png'),
-(9, 'DPR', 'assets/img/antara/client/DPR.png'),
-(10, 'Kominfo', 'assets/img/antara/client/Kominfo.png'),
-(11, 'Polri', 'assets/img/antara/client/Polri.png'),
-(12, 'MPR', 'assets/img/antara/client/MPR.png'),
-(13, 'Pertamina', 'assets/img/antara/client/Pertamina.png'),
-(14, 'PLN', 'assets/img/antara/client/PLN.png'),
-(15, 'Shopee', 'assets/img/antara/client/Shopee.png'),
-(16, 'Trans News Corporate', 'assets/img/antara/client/Trans_News_Corporate.png');
+(1, 'Astra', 'assets/img/antara/logo/client/logo-astra.png'),
+(2, 'Bank BNI', 'assets/img/antara/logo/client/logo-bank-bni.png'),
+(3, 'Bank BRI', 'assets/img/antara/logo/client/logo-bank-bri.png'),
+(4, 'Bank Indonesia', 'assets/img/antara/logo/client/logo-bank-indonesia.png'),
+(5, 'Bank Mandiri', 'assets/img/antara/logo/client/logo-bank-mandiri.png'),
+(6, 'BPJS Kesehatan', 'assets/img/antara/logo/client/logo-bpjs-kesehatan.png'),
+(7, 'BPJS Ketenagakerjaan', 'assets/img/antara/logo/client/logo-bpjs-ketenagakerjaan.png'),
+(8, 'CNN Indonesia', 'assets/img/antara/logo/client/logo-cnn-indonesia.png'),
+(9, 'DPR', 'assets/img/antara/logo/client/logo-dpr.png'),
+(10, 'Kominfo', 'assets/img/antara/logo/client/logo-kominfo.png'),
+(11, 'Polri', 'assets/img/antara/logo/client/logo-polri.png'),
+(12, 'MPR', 'assets/img/antara/logo/client/logo-mpr.png'),
+(13, 'Pertamina', 'assets/img/antara/logo/client/logo-pertamina.png'),
+(14, 'PLN', 'assets/img/antara/logo/client/logo-pln.png'),
+(15, 'Shopee', 'assets/img/antara/logo/client/logo-shopee.png'),
+(16, 'Trans News Corporate', 'assets/img/antara/logo/client/logo-trans-news-corporate.png'),
+(17, 'Bank BJB', 'assets/img/antara/logo/client/logo-bank-bjb.png'),
+(18, 'ID Clear', 'assets/img/antara/logo/client/logo-id-clear-kpei.png'),
+(19, 'Kementrian Keuangan Republik Indonesia', 'assets/img/antara/logo/client/logo-kemenkeu.png');
 
 -- --------------------------------------------------------
 
@@ -115,7 +118,7 @@ INSERT INTO `client` (`id`, `name`, `image`) VALUES
 CREATE TABLE `mitra` (
   `id` int(50) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `image` varchar(50) NOT NULL
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -123,19 +126,19 @@ CREATE TABLE `mitra` (
 --
 
 INSERT INTO `mitra` (`id`, `name`, `image`) VALUES
-(1, 'Acn', 'assets/img/antara/mitra/Acnnewswire.png'),
-(2, 'Afp', 'assets/img/antara/mitra/Afp.png'),
-(3, 'Ap-News', 'assets/img/antara/mitra/Ap_News.png'),
-(4, 'Asianet', 'assets/img/antara/mitra/Asianet.png'),
-(5, 'Bernama', 'assets/img/antara/mitra/Bernama.png'),
-(6, 'Bloomberg', 'assets/img/antara/mitra/Bloomberg.png'),
-(7, 'Efe', 'assets/img/antara/mitra/Efe.png'),
-(8, 'Kyodonews', 'assets/img/antara/mitra/Kyodonews.png'),
-(9, 'Oana', 'assets/img/antara/mitra/Oana.png'),
-(10, 'Sputnik', 'assets/img/antara/mitra/Sputnik.png'),
-(11, 'Thomson Reuters', 'assets/img/antara/mitra/Thomson_Reuters.png'),
-(12, 'Ttxvn', 'assets/img/antara/mitra/Ttxvn.png'),
-(13, 'Xinhua News Agency', 'assets/img/antara/mitra/Xinhua_News_Agency.png');
+(1, 'Acn', 'assets/img/antara/logo/mitra/logo-acnnewswire.png'),
+(2, 'Afp', 'assets/img/antara/logo/mitra/logo-afp.png'),
+(3, 'Ap-News', 'assets/img/antara/logo/mitra/logo-ap-news.png'),
+(4, 'Asianet', 'assets/img/antara/logo/mitra/logo-asianet.png'),
+(5, 'Bernama', 'assets/img/antara/logo/mitra/logo-bernama.png'),
+(6, 'Bloomberg', 'assets/img/antara/logo/mitra/logo-bloomberg.png'),
+(7, 'Efe', 'assets/img/antara/logo/mitra/logo-efe.png'),
+(8, 'Kyodo news', 'assets/img/antara/logo/mitra/logo-kyodo-news.png'),
+(9, 'Oana', 'assets/img/antara/logo/mitra/logo-oana.png'),
+(10, 'Sputnik', 'assets/img/antara/logo/mitra/logo-sputnik.png'),
+(11, 'Thomson Reuters', 'assets/img/antara/logo/mitra/logo-thomson-reuters.png'),
+(12, 'Ttxvn', 'assets/img/antara/logo/mitra/logo-ttxvn.png'),
+(13, 'Xinhua News Agency', 'assets/img/antara/logo/mitra/logo-xinhua-news-agency.png');
 
 -- --------------------------------------------------------
 
@@ -147,7 +150,7 @@ CREATE TABLE `product` (
   `id` int(50) NOT NULL,
   `name` varchar(50) NOT NULL,
   `slug` varchar(50) NOT NULL,
-  `image` varchar(50) NOT NULL
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -155,18 +158,18 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
-(1, 'Antara News', 'antara news', 'assets/img/antara/AntaraNews.png'),
-(2, 'IMCS', 'imcs', 'assets/img/antara/IMCS.png'),
-(3, 'Antara Foto', 'antara foto', 'assets/img/antara/AntaraFoto.png'),
-(4, 'Antara TV', 'antara tv', 'assets/img/antara/AntaraTV.png'),
-(5, 'MICE', 'mice', 'assets/img/antara/Mice.png'),
-(6, 'Lembaga Pendidikan Antara', 'lpja', 'assets/img/antara/Asj.png'),
-(7, 'Layanan Analisa Dan Informasi', 'layanan analisa dan informasi', 'assets/img/antara/LayananAnalisaDanInformasi.png'),
-(8, 'Branda', 'branda', 'assets/img/antara/Branda.png'),
-(9, 'Reuters', 'reuters', 'assets/img/antara/Reuters.png'),
-(10, 'Bloomberg', 'bloomberg', 'assets/img/antara/Bloomberg.png'),
-(11, 'Sewa Perangkat Keras', 'sewa perangkat keras', 'assets/img/antara/SewaPerangkatkeras.png'),
-(12, 'LSEG Data & Analitics', 'lseg', 'assets/img/antara/lseg.png');
+(1, 'Antara News', 'antara news', 'assets/img/antara/logo/product/logo-antara-news.png'),
+(2, 'IMCS', 'imcs', 'assets/img/antara/logo/product/logo-imcs.png'),
+(3, 'Antara Foto', 'antara foto', 'assets/img/antara/logo/product/logo-antara-foto.png'),
+(4, 'Antara TV', 'antara tv', 'assets/img/antara/logo/product/logo-antara-tv.png'),
+(5, 'MICE', 'mice', 'assets/img/antara/logo/product/logo-mice.png'),
+(6, 'Lembaga Pendidikan Antara', 'lpa', 'assets/img/antara/logo/product/logo-lpa.png'),
+(7, 'Layanan Analisa Dan Informasi', 'layanan analisa dan informasi', 'assets/img/antara/logo/product/logo-layanan-analisa-dan-informasi.png'),
+(8, 'Branda', 'branda', 'assets/img/antara/logo/product/logo-branda.png'),
+(9, 'Reuters', 'reuters', 'assets/img/antara/logo/product/logo-reuters.png'),
+(10, 'Bloomberg', 'bloomberg', 'assets/img/antara/logo/product/logo-bloomberg.png'),
+(11, 'Sewa Perangkat Keras', 'sewa perangkat keras', 'assets/img/antara/logo/product/logo-sewa-perangkat-keras.png'),
+(12, 'LSEG Data & Analitics', 'lseg', 'assets/img/antara/logo/product/logo-lseg.png');
 
 -- --------------------------------------------------------
 
@@ -231,7 +234,7 @@ ALTER TABLE `assets`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `mitra`

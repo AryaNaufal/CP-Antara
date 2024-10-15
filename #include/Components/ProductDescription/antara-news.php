@@ -3,8 +3,8 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center position-relative">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/ANTARANEWS_KOMPUTER.png" alt="" class="h-auto">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/ANTARANEWS_MOBILE.png" alt="" class="h-auto position-absolute" style="width: 60%; top: 30%; right: -15%;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-computer-picture.png" alt="" class="h-auto">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-mobile-picture.png" alt="" class="h-auto position-absolute" style="width: 60%; top: 30%; right: -15%;">
     </div>
 
 
@@ -23,9 +23,9 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_1.png" alt="" style="height: 150px; margin: 0 5px;">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_2.png" alt="" style="height: 200px; width: auto;">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_3.png" alt="" style="height: 150px; margin: 0 5px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-1.png" alt="" style="height: 150px; margin: 0 5px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-2.png" alt="" style="height: 200px; width: auto;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-3.png" alt="" style="height: 150px; margin: 0 5px;">
     </div>
 
     <div class="col-sm-12 col-lg-6">
@@ -41,8 +41,8 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_4.png" alt="" style="height: 200px;">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_5.png" alt="" style="height: 200px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-4.png" alt="" style="height: 200px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-5.png" alt="" style="height: 200px;">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -59,8 +59,8 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_6.png" alt="" style="height: 200px;">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/Picture_7.png" alt="" style="height: 200px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-6.png" alt="" style="height: 200px;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraNews/antara-news-picture-7.png" alt="" style="height: 200px;">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">

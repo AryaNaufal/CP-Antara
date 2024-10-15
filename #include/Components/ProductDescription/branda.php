@@ -3,8 +3,8 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center position-relative">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/BRANDA_KOMPUTER.png" alt="" class="h-auto">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/BRANDA_MOBILE.png" alt="" class="h-auto position-absolute" style="width: 60%; top: 30%; right: -15%;">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-computer-picture.png" alt="" class="h-auto">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-mobile-picture.png" alt="" class="h-auto position-absolute" style="width: 60%; top: 30%; right: -15%;">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -20,7 +20,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/Picture_1.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-picture-1.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6">
@@ -35,7 +35,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/Picture_2.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-picture-2.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
@@ -51,10 +51,10 @@
   <div class="row gap-5 mx-auto my-5 py-5 d-flex flex-row-reverse flex-wrap justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
       <div class="row">
-        <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/AFP_Agence_France_Presse_New.png" alt="" class="col-6 rounded-1">
-        <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/DPA_Deutschen_Presse_Agentur.png" alt="" class="col-6 rounded-1">
+        <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-afp-logo.png" alt="" class="col-6 rounded-1">
+        <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-dpa-logo.png" alt="" class="col-6 rounded-1">
         <div class="col-12 align-self-baseline text-center">
-          <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/Xinhua.png" alt="" class="rounded-1" style="height: 30%; width: 30%;">
+          <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-xinhua-logo.png" alt="" class="rounded-1" style="height: 30%; width: 30%;">
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@
 
   <div class="row gap-5 mx-auto my-5 py-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/Picture_3.jpg" alt="" class="rounded-1">
+      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/Branda/branda-picture-3.jpg" alt="" class="rounded-1">
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
