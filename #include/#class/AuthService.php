@@ -55,7 +55,7 @@ class AuthService
                     $_SESSION['user_id'] = $google_id;
                     $_SESSION['user_name'] = $google_name;
                     $_SESSION['user_email'] = $google_email;
-                    header('Location: /CP-Antara/');
+                    header('location: ' . SERVER_NAME);
                 } else {
                     $query = "INSERT INTO user (name, email, last_login, oauth_id) VALUES (:name, :email, :last_login, :oauth_id)";
                     $stmt = $this->db->getConnection()->prepare($query);
@@ -67,7 +67,7 @@ class AuthService
                     $_SESSION['user_id'] = $google_id;
                     $_SESSION['user_name'] = $google_name;
                     $_SESSION['user_email'] = $google_email;
-                    header('Location: /CP-Antara/');
+                    header('location: ' . SERVER_NAME);
                 }
             } else {
                 return "Login Failed!";

@@ -27,7 +27,19 @@
                         echo $errorMessage;
                     }
                     ?>
-
+                    <?php if (!isset($_SESSION['user_id'])): ?>
+                        <div class="my-5">
+                            <a href="<?= SERVER_NAME ?>form-data.php" target="_self" class="rounded-3 align-self-center px-3 py-2" style="background-color: var(--color-primary); color: white;">Informasi Lebih Lanjut...</a>
+                        </div>
+                    <?php else: ?>
+                        <?php if (empty($_SESSION['data_npwp'])): ?>
+                            <div class="my-5">
+                                <a href="<?= SERVER_NAME ?>form-data.php" target="_self" class="rounded-3 align-self-center px-3 py-2" style="background-color: var(--color-primary); color: white;">Price List...</a>
+                            </div>
+                        <?php else: ?>
+                            <?php include_once ROOT_PATH . '/#include/Components/PriceList.php'; ?>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header("Location: /CP-Antara/");
+header("Location: " . $_SERVER['HTTP_REFERER']);
