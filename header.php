@@ -26,7 +26,7 @@ function filterType($type, $var)
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- ========== Favicon Icon ========== -->
-	<link rel="shortcut icon" href="<?= SERVER_NAME ?>assets/img/antara/logo-antara.png" type="image/x-icon">
+	<link rel="shortcut icon" href="<?= SERVER_NAME ?>assets/img/antara/logo-antara.PNG" type="image/x-icon">
 	<title><?= $title ?></title>
 	<!-- ========== Start Stylesheet ========== -->
 

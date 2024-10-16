@@ -30,7 +30,7 @@ sendButton.onclick = function () {
     userInput.value = ''; // Mengosongkan input
     chat.scrollTop = chat.scrollHeight;
 
-    fetch('chatbot/chatbot.php?message=' + encodeURIComponent(inputText))
+    fetch('http://localhost/CP-Antara/chatbot/chatbot.php?message=' + encodeURIComponent(inputText))
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.text();
