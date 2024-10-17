@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2024 at 04:42 AM
+-- Generation Time: Oct 17, 2024 at 12:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -138,7 +138,8 @@ INSERT INTO `mitra` (`id`, `name`, `image`) VALUES
 (10, 'Sputnik', 'assets/img/antara/logo/mitra/logo-sputnik.png'),
 (11, 'Thomson Reuters', 'assets/img/antara/logo/mitra/logo-thomson-reuters.png'),
 (12, 'Ttxvn', 'assets/img/antara/logo/mitra/logo-ttxvn.png'),
-(13, 'Xinhua News Agency', 'assets/img/antara/logo/mitra/logo-xinhua-news-agency.png');
+(13, 'Xinhua News Agency', 'assets/img/antara/logo/mitra/logo-xinhua-news-agency.png'),
+(14, 'HCM Ads Media', 'assets/img/antara/logo/mitra/logo-hcm-ads-media.png');
 
 -- --------------------------------------------------------
 
@@ -162,14 +163,14 @@ INSERT INTO `product` (`id`, `name`, `slug`, `image`) VALUES
 (2, 'IMCS', 'imcs', 'assets/img/antara/logo/product/logo-imcs.png'),
 (3, 'Antara Foto', 'antara foto', 'assets/img/antara/logo/product/logo-antara-foto.png'),
 (4, 'Antara TV', 'antara tv', 'assets/img/antara/logo/product/logo-antara-tv.png'),
-(5, 'MICE', 'mice', 'assets/img/antara/logo/product/logo-mice.png'),
+(5, 'Antara Heritage Center', 'ahc', 'assets/img/antara/logo/product/logo-ahc.png'),
 (6, 'Lembaga Pendidikan Antara', 'lpa', 'assets/img/antara/logo/product/logo-lpa.png'),
 (7, 'Layanan Analisa Dan Informasi', 'layanan analisa dan informasi', 'assets/img/antara/logo/product/logo-layanan-analisa-dan-informasi.png'),
 (8, 'Branda', 'branda', 'assets/img/antara/logo/product/logo-branda.png'),
 (9, 'Reuters', 'reuters', 'assets/img/antara/logo/product/logo-reuters.png'),
 (10, 'Bloomberg', 'bloomberg', 'assets/img/antara/logo/product/logo-bloomberg.png'),
 (11, 'Sewa Perangkat Keras', 'sewa perangkat keras', 'assets/img/antara/logo/product/logo-sewa-perangkat-keras.png'),
-(12, 'LSEG Data & Analitics', 'lseg', 'assets/img/antara/logo/product/logo-lseg.png');
+(12, 'HCM Ads Media', 'hcm', 'assets/img/antara/logo/product/logo-hcm-ads-media.png');
 
 -- --------------------------------------------------------
 
@@ -240,7 +241,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `mitra`
 --
 ALTER TABLE `mitra`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `user`
