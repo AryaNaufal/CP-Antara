@@ -19,9 +19,9 @@
                         <!-- Single Item -->
                         <?php foreach ($products as $item) : ?>
                             <div class="pf-item">
-                                <div class="overlay wow fadeInUp" data-wow-delay="<?= $item['id'] * 100 ?>ms">
+                                <div class="overlay wow fadeInUp shadow-sm" data-wow-delay="<?= $item['id'] * 100 ?>ms">
                                     <div style="display: flex; width: auto; height: 200px;">
-                                        <img src='<?= $item['image'] ?>' alt="thumb" style="object-fit: contain; padding: 0 40px">
+                                        <img src='<?= $item['image'] ?>' alt="thumb" style="object-fit: contain; padding: 0 40px; width: 100%;">
                                     </div>
                                     <div class="content">
                                         <div class="title">
