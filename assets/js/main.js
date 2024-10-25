@@ -226,13 +226,16 @@
         /* ==================================================
             # Partner Carousel
          ===============================================*/
-        const carousel = $('.partner-carousel');
+        const productCarousel = $('.product-carousel');
+        const clientCarousel = $('#client-carousel');
+        const clientCarousel2 = $('#client-carousel2');
+        const mitraCarousel = $('#mitra-carousel');
+        const mitraCarousel2 = $('#mitra-carousel2');
 
-        carousel.owlCarousel({
+        const carouselOptions = {
             loop: true,
             margin: 10,
             nav: false,
-            dots: true,
             autoplay: true,
             autoplayTimeout: 2000,
             smartSpeed: 1300,
@@ -252,14 +255,56 @@
                     margin: 20
                 }
             }
+        };
+
+        productCarousel.owlCarousel({
+            ...carouselOptions,
+            autoplay: false,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2,
+                    margin: 20
+                },
+                1000: {
+                    items: 4,
+                    margin: 20
+                }
+            }
         });
 
+        clientCarousel.owlCarousel({
+            ...carouselOptions,
+            dots: false
+        });
+
+        clientCarousel2.owlCarousel({
+            ...carouselOptions,
+            dots: true
+        });
+
+        mitraCarousel.owlCarousel({
+            ...carouselOptions,
+            dots: false
+        });
+
+        mitraCarousel2.owlCarousel({
+            ...carouselOptions,
+            dots: true
+        });
+
+
         document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                carousel.trigger('stop.owl.autoplay');
-            } else {
-                carousel.trigger('play.owl.autoplay');
-            }
+            const action = document.hidden ? 'stop' : 'play';
+
+            productCarousel.trigger(`${action}.owl.autoplay`);
+            clientCarousel.trigger(`${action}.owl.autoplay`);
+            clientCarousel2.trigger(`${action}.owl.autoplay`);
+            mitraCarousel.trigger(`${action}.owl.autoplay`);
+            mitraCarousel2.trigger(`${action}.owl.autoplay`);
         });
 
 

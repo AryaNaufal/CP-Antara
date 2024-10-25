@@ -10,15 +10,24 @@
             <div class="clients-style-one-box">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="partner-carousel owl-carousel owl-theme">
+                        <div class="client-carousel owl-carousel owl-theme" id="client-carousel">
                             <?php
-                            $count = 0;
-                            foreach ($clients as $client):
-                                if ($count >= count($clients)) break;
-                                $count++;
+                            $midpoint = ceil(count($clients) / 2);
+                            for ($i = 0; $i < $midpoint; $i++):
+                                if (!isset($clients[$i])) break;
                             ?>
-                                <img src="<?= htmlspecialchars($client['image']) ?>" alt="Partner" class="w-100">
-                            <?php endforeach; ?>
+                                <img src="<?= htmlspecialchars($clients[$i]['image']) ?>" alt="Partner" class="w-100">
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="client-carousel owl-carousel owl-theme" id="client-carousel2">
+                            <?php
+                            for ($i = $midpoint; $i < count($clients); $i++):
+                                if (!isset($clients[$i])) break;
+                            ?>
+                                <img src="<?= htmlspecialchars($clients[$i]['image']) ?>" alt="Partner" class="w-100">
+                            <?php endfor; ?>
                         </div>
                     </div>
                 </div>

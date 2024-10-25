@@ -3826,13 +3826,13 @@ body,
 }
 
 .clients-area .partner-carousel,
-.clients-area .clients-carousel {
+.clients-area .client-carousel {
 	margin-top: 50px;
 	position: relative;
 }
 
 .clients-area .partner-carousel img,
-.clients-area .clients-carousel img {
+.clients-area .client-carousel img {
 	width: auto;
 	margin: auto;
 }
@@ -6278,7 +6278,10 @@ footer.bg-dark .footer-bottom a:hover {
 	line-height: 1.2;
 }
 
-.partner-carousel.owl-carousel .owl-item img {
+.partner-carousel.owl-carousel .owl-item img,
+.product-carousel.owl-carousel .owl-item img,
+.mitra-carousel.owl-carousel .owl-item img,
+.client-carousel.owl-carousel .owl-item img {
 	margin: auto;
 	width: auto;
 }
@@ -6322,6 +6325,14 @@ footer.bg-dark .footer-bottom a:hover {
 	float: left;
 	padding: 15px;
 	width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+	.gallery-items.colums-2 .pf-item {
+		float: left;
+		padding: 15px;
+		width: 100%;
+	}
 }
 
 .gallery-items.colums-4 .pf-item {

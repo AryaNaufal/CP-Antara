@@ -13,6 +13,27 @@ $products = $productService->getProducts();
 
 $productId = isset($_GET['productId']) ?? NULL;
 
+// Filtered Product
+$eventProduct = array_filter($products, function ($product) {
+    return in_array($product['name'], ['Antara Heritage Center']);
+});
+
+$mitraProduct = array_filter($products, function ($product) {
+    return in_array($product['name'], ['Bloomberg', 'Reuters']);
+});
+
+$affiliateProduct = array_filter($products, function ($product) {
+    return in_array($product['name'], ['HCM Ads Media']);
+});
+
+// Sisa Product
+$sisaProduct = array_filter($products, function ($product) use ($mitraProduct, $affiliateProduct) {
+    $excludedProducts = array_merge($mitraProduct, $affiliateProduct);
+    return !in_array($product, $excludedProducts);
+});
+
+echo "<script>console.log(" . json_encode($sisaProduct) . ");</script>";
+
 if (empty($productId)) {
     // Meta data
     $current_menu = "Product";

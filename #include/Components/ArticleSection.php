@@ -65,7 +65,7 @@
         <!-- Start Atribute Navigation -->
         <div class="wow fadeInUp" style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px; width: max-content;">
           <ul>
-            <li class="button"><a href="<?php SERVER_NAME ?>article" style="color: white;">See More</a></li>
+            <li class="button"><a href="<?php SERVER_NAME ?>article" style="color: white;">Lihat Semua</a></li>
           </ul>
         </div>
         <!-- End Atribute Navigation -->

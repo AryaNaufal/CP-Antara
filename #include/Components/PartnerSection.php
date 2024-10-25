@@ -10,15 +10,24 @@
             <div class="clients-style-one-box">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="partner-carousel owl-carousel owl-theme">
+                        <div class="mitra-carousel owl-carousel owl-theme" id="mitra-carousel">
                             <?php
-                            $count = 0;
-                            foreach ($mitras as $mitra):
-                                if ($count >= count($mitras)) break;
-                                $count++;
+                            $midpoint = ceil(count($mitras) / 2);
+                            for ($i = 0; $i < $midpoint; $i++):
+                                if (!isset($mitras[$i])) break;
                             ?>
-                                <img src="<?= htmlspecialchars($mitra['image']) ?>" alt="Partner" class="w-100">
-                            <?php endforeach; ?>
+                                <img src="<?= htmlspecialchars($mitras[$i]['image']) ?>" alt="Partner" class="w-100">
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mitra-carousel owl-carousel owl-theme" id="mitra-carousel2">
+                            <?php
+                            for ($i = $midpoint; $i < count($mitras); $i++):
+                                if (!isset($mitras[$i])) break;
+                            ?>
+                                <img src="<?= htmlspecialchars($mitras[$i]['image']) ?>" alt="Partner" class="w-100">
+                            <?php endfor; ?>
                         </div>
                     </div>
                 </div>
