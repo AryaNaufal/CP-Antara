@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "#include/config.php";
-include "#include/#class/Autoload.php";
+include_once "#include/config.php";
+include_once "#include/#class/Autoload.php";
 
 use App\Lib;
 use App\ProductService;
@@ -11,7 +11,7 @@ $productService = new ProductService();
 
 $products = $productService->getProducts();
 
-$productId = isset($_GET['productId']) ?? NULL;
+$productId = isset($_GET['productId']) ?? null;
 
 // Filtered Product
 $eventProduct = array_filter($products, function ($product) {
@@ -37,7 +37,7 @@ echo "<script>console.log(" . json_encode($sisaProduct) . ");</script>";
 if (empty($productId)) {
     // Meta data
     $current_menu = "Produk";
-    $current_sub_menu = NULL;
+    $current_sub_menu = null;
     $title = "Produk";
 
     include_once __DIR__ . '/header.php';
@@ -51,7 +51,7 @@ if (empty($productId)) {
 
     // get selected product
     foreach ($products as $product) {
-        if (strcasecmp($basename, $Lib->seo_title($product['slug'])) === 0) {
+        if (strcasecmp($basename, $Lib->seoTitle($product['slug'])) === 0) {
             $item = $product;
             break;
         }
@@ -63,7 +63,7 @@ if (empty($productId)) {
 
     // Meta data
     $current_menu =  $item['name'] ?? null;
-    $current_sub_menu = NULL;
+    $current_sub_menu = null;
     $title = $item['name'] ?? null;
 
     include_once __DIR__ . '/header.php';

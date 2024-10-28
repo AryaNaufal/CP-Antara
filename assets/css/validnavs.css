@@ -13,6 +13,7 @@ Version: 1.0
 
 
 @media (min-width: 768px) {
+
 	.nav-box .container,
 	.nav-box .container-lg,
 	.nav-box .container-md,
@@ -1757,6 +1758,7 @@ nav.navbar.validnavs.brand-center {
 	nav.validnavs.navbar-sidebar .dropdown .megamenu-content .col-menu ul.menu-col li a {
 		padding: 3px 0 !important;
 	}
+
 	/* Center Menu */
 	nav.validnavs.brand-center .navbar-brand {
 		position: relative;
@@ -1787,6 +1789,7 @@ nav.navbar.validnavs.brand-center {
 		position: relative;
 		top: 10px;
 	}
+
 	/* Nav box */
 	nav.navbar.validnavs.navbar-fixed.nav-box.no-background {
 		background: var(--color-primary);
@@ -2000,7 +2003,7 @@ nav.navbar.validnavs.brand-center {
 		nav.navbar.validnavs .navbar-nav>li>a.login-button {
 			visibility: visible;
 			color: white;
-			background-color: #AA0A2F;
+			background-color: var(--color-primary);
 			display: flex;
 			justify-content: center;
 		}
@@ -2345,6 +2348,7 @@ nav.navbar.validnavs.brand-center {
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+
 	.navbar.validnavs.sticked .attr-right .attr-nav li .call i,
 	.navbar.validnavs.navbar-sticky .attr-right .attr-nav li .call i {
 		color: var(--color-primary);
@@ -2647,6 +2651,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	nav.navbar.validnavs .navbar-collapse.collapse.show img {
 		display: inline-block;
 	}
+
 	nav.navbar.validnavs .navbar-collapse.collapse img {
 		display: inline-block;
 	}
@@ -2718,7 +2723,8 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		display: none;
 	}
 
-	.navbar.brand-style-bg.sticked .navbar-header::after, .navbar.brand-style-bg.sticked .navbar-header::before {
+	.navbar.brand-style-bg.sticked .navbar-header::after,
+	.navbar.brand-style-bg.sticked .navbar-header::before {
 		display: none;
 	}
 

@@ -4,7 +4,7 @@ namespace App;
 
 class Lib
 {
-    public function seo_title($s)
+    public function seoTitle($s)
     {
         $c = array(' ');
         $d = array('-', '/', '\\', ',', '.', '#', ':', ';', '\'', '"', '[', ']', '{', '}', ')', '(', '|', '`', '~', '!', '@', '%', '$', '^', '&', '*', '=', '?', '+');

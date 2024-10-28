@@ -14,7 +14,9 @@
                             <?php
                             $midpoint = ceil(count($mitras) / 2);
                             for ($i = 0; $i < $midpoint; $i++):
-                                if (!isset($mitras[$i])) break;
+                                if (!isset($mitras[$i])) {
+                                    break;
+                                }
                             ?>
                                 <img src="<?= htmlspecialchars($mitras[$i]['image']) ?>" alt="Partner" class="w-100">
                             <?php endfor; ?>
@@ -24,7 +26,9 @@
                         <div class="mitra-carousel owl-carousel owl-theme" id="mitra-carousel2">
                             <?php
                             for ($i = $midpoint; $i < count($mitras); $i++):
-                                if (!isset($mitras[$i])) break;
+                                if (!isset($mitras[$i])) {
+                                    break;
+                                }
                             ?>
                                 <img src="<?= htmlspecialchars($mitras[$i]['image']) ?>" alt="Partner" class="w-100">
                             <?php endfor; ?>

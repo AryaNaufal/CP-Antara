@@ -7,7 +7,7 @@
                 <ol class="breadcrumb">
                     <li class=""><a href="<?= SERVER_NAME ?>">Beranda</a></li>
                     <span class="mx-2"> > </span>
-                    <li aria-current="page" style="font-weight: 600; color: #AA0A2F;"><?= $title ?></li>
+                    <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $title ?></li>
                 </ol>
             </nav>
         </div>
@@ -27,12 +27,12 @@
                                         <div class="title">
                                             <span>Product</span>
                                             <h5>
-                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>" aria-label="<?= $item['name'] ?>">
                                                     <?= $item['name'] ?>
                                                 </a>
                                             </h5>
                                         </div>
-                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>">
                                             Details
                                         </a>
                                     </div>
@@ -64,12 +64,12 @@
                                         <div class="title">
                                             <span>Product</span>
                                             <h5>
-                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>" aria-label="<?= $item['name'] ?>">
                                                     <?= $item['name'] ?>
                                                 </a>
                                             </h5>
                                         </div>
-                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>">
                                             Details
                                         </a>
                                     </div>
@@ -98,12 +98,12 @@
                                         <div class="title">
                                             <span>Product</span>
                                             <h5>
-                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                                <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>" aria-label="<?= $item['name'] ?>">
                                                     <?= $item['name'] ?>
                                                 </a>
                                             </h5>
                                         </div>
-                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($item['slug']) ?>">
+                                        <a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($item['slug']) ?>">
                                             Details
                                         </a>
                                     </div>

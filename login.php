@@ -1,8 +1,8 @@
 <?php
 session_start();
-include "#include/config.php";
-include "#include/#class/Autoload.php";
-include  "vendor/autoload.php";
+include_once "#include/config.php";
+include_once "#include/#class/Autoload.php";
+include_once  "vendor/autoload.php";
 
 use App\AuthService;
 
@@ -10,7 +10,7 @@ $auth = new AuthService();
 
 // Meta data
 $current_menu = "";
-$current_sub_menu = NULL;
+$current_sub_menu = null;
 $title = "Login";
 
 include_once __DIR__ . '/header.php';

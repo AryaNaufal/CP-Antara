@@ -22,7 +22,9 @@
       else:
         $count = 0;
         foreach ($articleData as $item):
-          if ($count >= 3) break;
+          if ($count >= 3) {
+            break;
+          }
           $count++;
 
           $dateString = $item['isoDate'];
@@ -49,7 +51,7 @@
                   </ul>
                 </div>
                 <h4>
-                  <a href="<?= $item['link'] ?>" target="_blank"><?= $item['title'] ?></a>
+                  <a href="<?= $item['link'] ?>" target="_blank" aria-label="<?= $item['title'] ?>"><?= $item['title'] ?></a>
                 </h4>
                 <p>
                   <?= $item['description'] ?? 'No description available.' ?>
@@ -63,7 +65,7 @@
 
       <div style="display: flex; justify-content: center">
         <!-- Start Atribute Navigation -->
-        <div class="wow fadeInUp" style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px; width: max-content;">
+        <div class="wow fadeInUp" style="background-color: var(--color-primary);  padding: 10px 20px; border-radius: 5px; width: max-content;">
           <ul>
             <li class="button"><a href="<?php SERVER_NAME ?>article" style="color: white;">Lihat Semua</a></li>
           </ul>

@@ -7,7 +7,7 @@
                 <ol class="breadcrumb">
                     <li class=""><a href="<?= SERVER_NAME ?>">Home</a></li>
                     <span class="mx-2"> > </span>
-                    <li aria-current="page" style="font-weight: 600; color: #AA0A2F;"><?= $current_menu ?></li>
+                    <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $current_menu ?></li>
                 </ol>
             </nav>
         </div>
@@ -48,7 +48,7 @@
                                             </div>
                                             <h4
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                                                <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
+                                                <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank" aria-label="<?= htmlspecialchars($item['title']); ?>">
                                                     <?= htmlspecialchars($item['title']); ?>
                                                 </a>
                                             </h4>
@@ -81,7 +81,7 @@
                                     <?php endif; ?>
 
                                     <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                                        <li class="page-item <?= ($i === $page) ? 'active' : ''; ?>"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $i; ?>"><?= $i; ?></a></li>
+                                        <li class="page-item <?= ($i === $page) ? 'active' : ''; ?>"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $i; ?>" aria-label="<?= $i; ?>"><?= $i; ?></a></li>
                                     <?php endfor; ?>
 
                                     <?php if ($page < $totalPages): ?>

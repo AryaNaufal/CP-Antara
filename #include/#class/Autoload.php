@@ -15,6 +15,6 @@ spl_autoload_register(function ($class) {
     // echo "Looking for file: $file\n";
 
     if (file_exists($file)) {
-        require $file;
+        require_once $file;
     }
 });

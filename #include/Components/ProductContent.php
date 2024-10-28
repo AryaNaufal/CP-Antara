@@ -10,7 +10,7 @@
                         <span class="mx-2"> > </span>
                         <li class=""><a href="<?= SERVER_NAME . "product" ?>">Produk</a></li>
                         <span class="mx-2"> > </span>
-                        <li aria-current="page" style="font-weight: 600; color: #AA0A2F;"><?= $title ?></li>
+                        <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $title ?></li>
                     </ol>
                 </nav>
             </div>
@@ -18,7 +18,7 @@
                 <div class="row">
 
                     <?php
-                    $descriptionFile = __DIR__ . '/ProductDescription/' . $Lib->seo_title($item['slug']) . '.php';
+                    $descriptionFile = __DIR__ . '/ProductDescription/' . $Lib->seoTitle($item['slug']) . '.php';
                     $errorMessage = "<p style='font-weight: 600; color: #202942;'>Sorry, product description is not available.</p>";
 
                     if (is_readable($descriptionFile)) {

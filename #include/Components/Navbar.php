@@ -1,3 +1,35 @@
+<?php
+$menuItems = [
+  [
+    'title' => 'Beranda',
+    'url' => SERVER_NAME . '#home',
+  ],
+  [
+    'title' => 'Publikasi',
+    'url' => SERVER_NAME . '#article',
+  ],
+  [
+    'title' => 'Produk',
+    'url' => SERVER_NAME . '#product',
+  ],
+  [
+    'title' => 'Mitra',
+    'url' => SERVER_NAME . '#partner',
+  ],
+  [
+    'title' => 'Klien',
+    'url' => SERVER_NAME . '#client',
+  ],
+  [
+    'title' => 'Tentang Kami',
+    'url' => SERVER_NAME . '#about',
+  ],
+  [
+    'title' => 'Kontak',
+    'url' => SERVER_NAME . '#footer',
+  ],
+];
+?>
 <header>
   <!-- Start Navigation -->
   <nav class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white " id="nav">
@@ -24,27 +56,11 @@
         </button>
 
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#home">Beranda</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#article">Publikasi</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#product">Produk</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#partner">Mitra</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#client">Klien</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#about">Tentang Kami</a>
-          </li>
-          <li>
-            <a class="smooth-menu" href="<?= SERVER_NAME ?>#footer">Kontak</a>
-          </li>
+          <?php foreach ($menuItems as $item): ?>
+            <li>
+              <a class="smooth-menu" href="<?= $item['url'] ?>" aria-label="<?= $item['title'] ?>"><?= $item['title'] ?></a>
+            </li>
+          <?php endforeach; ?>
           <li>
             <a class="login-button" href="<?= SERVER_NAME ?>login" style="">
               <?php if (!isset($_SESSION['user_id'])): ?>
@@ -59,7 +75,7 @@
 
       <div class="attr-right">
         <!-- Start Atribute Navigation -->
-        <div style="background-color: #AA0A2F;  padding: 10px 20px; border-radius: 5px;">
+        <div style="background-color: var(--color-primary); padding: 10px 20px; border-radius: 5px;">
           <ul>
             <li class="button">
               <?php if (!isset($_SESSION['user_id'])): ?>

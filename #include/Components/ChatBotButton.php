@@ -45,49 +45,6 @@ if (!isset($_SESSION['chat_history'])) {
           </ol>
           Silahkan pilih dengan mengetik angka pada daftar menu di atas atau ketik Batal untuk membatalkan permintaan.
         </div>
-
-        <!-- <div class="text-white" style="background-color: var(--color-primary); color: white; border-radius: 5px; padding: 10px; margin: 5px;">
-          Informasi Porduk/Layanan:<br><br>
-          <ol>
-            <li>
-              Antaranews.com
-            </li>
-            <li>
-              Antara Foto
-            </li>
-            <li>
-              Antara TV
-            </li>
-            <li>
-              IMCS
-            </li>
-            <li>
-              BRANDA
-            </li>
-            <li>
-              Lembaga Pendidikan Antara
-            </li>
-            <li>
-              M.I.C.E
-            </li>
-            <li>
-              Layanan Analisa & Informasi
-            </li>
-            <li>
-              Bloomberg
-            </li>
-            <li>
-              Reuters
-            </li>
-            <li>
-              Sewa Perangkat Keras
-            </li>
-            <li>
-              HCM Ads Media
-            </li>
-          </ol>
-          Silahkan pilih dengan mengetik angka pada daftar menu di atas atau tekan 0 untuk kembali ke menu awal
-        </div> -->
       </div>
 
     </div>

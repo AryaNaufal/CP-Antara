@@ -14,7 +14,9 @@
                             <?php
                             $midpoint = ceil(count($clients) / 2);
                             for ($i = 0; $i < $midpoint; $i++):
-                                if (!isset($clients[$i])) break;
+                                if (!isset($clients[$i])) {
+                                    break;
+                                }
                             ?>
                                 <img src="<?= htmlspecialchars($clients[$i]['image']) ?>" alt="Partner" class="w-100">
                             <?php endfor; ?>
@@ -24,7 +26,9 @@
                         <div class="client-carousel owl-carousel owl-theme" id="client-carousel2">
                             <?php
                             for ($i = $midpoint; $i < count($clients); $i++):
-                                if (!isset($clients[$i])) break;
+                                if (!isset($clients[$i])) {
+                                    break;
+                                }
                             ?>
                                 <img src="<?= htmlspecialchars($clients[$i]['image']) ?>" alt="Partner" class="w-100">
                             <?php endfor; ?>

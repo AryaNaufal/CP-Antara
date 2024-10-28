@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/#include/Components/Footer.php'; ?>
+<?php include_once __DIR__ . '/#include/Components/Footer.php'; ?>
 
 <!-- jQuery Frameworks
   ============================================= -->

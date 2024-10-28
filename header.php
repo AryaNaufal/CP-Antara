@@ -38,4 +38,4 @@ function filterType($type, $var)
 </head>
 
 <body>
-	<?php include __DIR__ . '/#include/Components/ChatBotButton.php'; ?>
+	<?php include_once __DIR__ . '/#include/Components/ChatBotButton.php'; ?>

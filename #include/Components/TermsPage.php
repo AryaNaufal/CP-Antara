@@ -1,3 +1,32 @@
+<?php
+$termList = [
+    [
+        "description" => "Pengguna memerlukan sebuah akun apabila ingin berlangganan untuk produk-produk yang berada di IMCS.COM. Jika Pengguna berminat berlangganan silahkan membuat akun dengan klik MASUK/SIGN IN."
+    ],
+    [
+        "description" => "Untuk melindungi akun Pengguna, kami menyarankan kerahasiaan sandi Pengguna harus tetap terjaga."
+    ],
+    [
+        "description" => "Pengguna bertanggung jawab atas aktivitas yang terjadi pada atau melalui akun IMCS.COM Anda."
+    ],
+    [
+        "description" => "Pengguna dihimbau untuk tidak menggunakan kembali sandi akun IMCS.COM pada aplikasi atau program lain."
+    ],
+    [
+        "description" => "Bila Pengguna mendapati adanya penggunaan akun IMCS.COM secara tidak sah oleh pihak lain, maka silahkan ganti/reset password akun Pengguna, atau klik HUBUNGI KAMI."
+    ],
+    [
+        "description" => "Kami berhak untuk melakukan verifikasi atas informasi yang telah Pengguna berikan, apabila kami menemukan informasi yang diberikan tidak akurat atau tidak sesuai, maka kami berhak menangguhkan untuk berlangganan dan atau menghapus akun Pengguna."
+    ],
+    [
+        "description" => "Pengguna dilarang menggunakan Produk kami untuk tujuan yang melanggar hukum atau kebijakan yang berlaku. Kami berhak untuk menghentikan akses Pengguna ke Produk kami jika Pengguna melanggar Ketentuan Penggunaan ini."
+    ],
+    [
+        "description" => "Pengguna menyetujui seluruh Perjanjian untuk berlangganan."
+    ]
+];
+?>
+
 <!-- Star Clients Area
     ============================================= -->
 <section class="default-padding-top default-padding bg-gray" id="product">
@@ -15,30 +44,11 @@
             </p>
         </div>
         <ol class="fs-6 lh-lg">
-            <li>
-                Pengguna memerlukan sebuah akun apabila ingin berlangganan untuk produk-produk yang berada di IMCS.COM. Jika Pengguna berminat berlangganan silahkan membuat akun dengan klik MASUK/SIGN IN
-            </li>
-            <li>
-                Untuk melindungi akun Pengguna, kami menyarankan kerahasiaan sandi Pengguna harus tetap terjaga.
-            </li>
-            <li>
-                Pengguna bertanggung jawab atas aktivitas yang terjadi pada atau melalui akun IMCS.COM Anda.
-            </li>
-            <li>
-                Pengguna dihimbau untuk tidak menggunakan kembali sandi akun IMCS.COM pada aplikasi atau program lain.
-            </li>
-            <li>
-                Bila Pengguna mendapati adanya penggunaan akun IMCS.COM secara tidak sah oleh pihak lain, maka silahkan ganti/reset password akun Pengguna, atau klik HUBUNGI KAMI.
-            </li>
-            <li>
-                Kami berhak untuk melakukan verifikasi atas informasi yang telah Pengguna berikan, apabila kami menemukan informasi yang diberikan tidak akurat atau tidak sesuai, maka kami berhak menangguhkan untuk berlangganan dan atau menghapus akun Pengguna.
-            </li>
-            <li>
-                Pengguna dilarang menggunakan Produk kami untuk tujuan yang melanggar hukum atau kebijakan yang berlaku. Kami berhak untuk menghentikan akses Pengguna ke Produk kami jika Pengguna melanggar Ketentuan Penggunaan ini.
-            </li>
-            <li>
-                Pengguna menyetujui seluruh Perjanjian untuk berlangganan
-            </li>
+            <?php foreach ($termList as $term): ?>
+                <li>
+                    <?= $term['description']; ?>
+                </li>
+            <?php endforeach; ?>
         </ol>
     </div>
 </section>

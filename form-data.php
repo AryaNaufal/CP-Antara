@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "#include/config.php";
-include "#include/#class/Autoload.php";
+include_once "#include/config.php";
+include_once "#include/#class/Autoload.php";
 
 use App\Lib;
 
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
 // Meta data
 $current_menu = "form data npwp";
-$current_sub_menu = NULL;
+$current_sub_menu = null;
 $title = "Form Data NPWP";
 
 include_once __DIR__ . '/header.php';

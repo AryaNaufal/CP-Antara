@@ -13,7 +13,9 @@
 						<?php
 						$count = 0;
 						foreach ($products as $product):
-							if ($count >= 4) break;
+							if ($count >= 4) {
+								break;
+							}
 							$count++;
 						?>
 							<div id="portfolio-grid" class="gallery-items d-flex flex-row flex-nowrap">
@@ -26,12 +28,12 @@
 											<div class="title" style="margin-bottom: 0px;">
 												<span>Product</span>
 												<h5>
-													<a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($product['slug']) ?>">
+													<a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($product['slug']) ?>" aria-label="<?= $product['name'] ?>">
 														<?= $product['name'] ?>
 													</a>
 												</h5>
 											</div>
-											<a href="<?= SERVER_NAME . "product/" . $Lib->seo_title($product['slug']) ?>">Details</a>
+											<a href="<?= SERVER_NAME . "product/" . $Lib->seoTitle($product['slug']) ?>">Details</a>
 										</div>
 									</div>
 								</div>
@@ -45,7 +47,7 @@
 	</div>
 	<div class="default-padding" style="display: flex; justify-content: center;">
 		<!-- Start Atribute Navigation -->
-		<div class="wow fadeInDown" style="background-color: #AA0A2F; padding: 10px 20px; border-radius: 5px; width: max-content;">
+		<div class="wow fadeInDown" style="background-color: var(--color-primary); padding: 10px 20px; border-radius: 5px; width: max-content;">
 			<ul>
 				<li class="button">
 					<a href="<?= SERVER_NAME ?>product" style="color: white;">Lihat Semua</a>
