@@ -63,7 +63,7 @@
                     <i class="fas fa-phone"></i>
                   </div>
                   <div class="content">
-                    <strong style="font-weight: 900;">Phone: &nbsp;</strong>
+                    <strong style="font-weight: 900;">Telepon: &nbsp;</strong>
                     <ul class="d-flex flex-column gap-0" style="list-style: circle;">
                       <li style="margin: 0;">
                         <a href="tel:021-3842591">021-3842591</a>
@@ -80,7 +80,7 @@
                     <i class="fas fa-mobile"></i>
                   </div>
                   <div class="content">
-                    <strong>Mobile:</strong>
+                    <strong>Seluler:</strong>
                     <a href="tel:08119569694">08119569694</a><br>
                   </div>
                 </li>
@@ -102,13 +102,13 @@
         <div class="col-lg-6 text-end link">
           <ul>
             <li>
-              <a href="<?= SERVER_NAME; ?>terms">Terms</a>
+              <a href="<?= SERVER_NAME; ?>terms">Ketentuan</a>
             </li>
             <li>
-              <a href="<?= SERVER_NAME; ?>privacy">Privacy</a>
+              <a href="<?= SERVER_NAME; ?>privacy">Kebijakan Privasi</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="#">Bantuan</a>
             </li>
           </ul>
         </div>

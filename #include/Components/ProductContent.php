@@ -6,9 +6,9 @@
             <div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class=""><a href="<?= SERVER_NAME ?>">Home</a></li>
+                        <li class=""><a href="<?= SERVER_NAME ?>">Beranda</a></li>
                         <span class="mx-2"> > </span>
-                        <li class=""><a href="<?= SERVER_NAME . "product" ?>">Product</a></li>
+                        <li class=""><a href="<?= SERVER_NAME . "product" ?>">Produk</a></li>
                         <span class="mx-2"> > </span>
                         <li aria-current="page" style="font-weight: 600; color: #AA0A2F;"><?= $title ?></li>
                     </ol>
