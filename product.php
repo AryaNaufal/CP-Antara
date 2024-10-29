@@ -41,8 +41,8 @@ if (empty($productId)) {
     $title = "Produk";
 
     include_once __DIR__ . '/header.php';
-    include_once __DIR__ . '/#include/Components/Navbar.php';
-    include_once __DIR__ . '/#include/Components/ProductPage.php';
+    include_once __DIR__ . '/#include/component/layout/navbar.php';
+    include_once __DIR__ . '/#include/component/product/page/index.php';
     include_once __DIR__ . '/footer.php';
 } else {
     $basename = basename($_SERVER['REQUEST_URI']);
@@ -67,7 +67,7 @@ if (empty($productId)) {
     $title = $item['name'] ?? null;
 
     include_once __DIR__ . '/header.php';
-    include_once __DIR__ . '/#include/Components/Navbar.php';
-    include_once __DIR__ . '/#include/Components/ProductContent.php';
+    include_once __DIR__ . '/#include/component/layout/navbar.php';
+    include_once __DIR__ . '/#include/component/product/product-content.php';
     include_once __DIR__ . '/footer.php';
 }

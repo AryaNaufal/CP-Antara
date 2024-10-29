@@ -56,9 +56,9 @@ $menuItems = [
         </button>
 
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-          <?php foreach ($menuItems as $item): ?>
+          <?php foreach ($menuItems as $menuItem): ?>
             <li>
-              <a class="smooth-menu" href="<?= $item['url'] ?>" aria-label="<?= $item['title'] ?>"><?= $item['title'] ?></a>
+              <a class="smooth-menu" href="<?= $menuItem['url'] ?>" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
             </li>
           <?php endforeach; ?>
           <li>

@@ -18,8 +18,10 @@
                 <div class="row">
 
                     <?php
-                    $descriptionFile = __DIR__ . '/ProductDescription/' . $Lib->seoTitle($item['slug']) . '.php';
+
+                    $descriptionFile = __DIR__ . '/description/' . $Lib->seoTitle($item['slug']) . '.php';
                     $errorMessage = "<p style='font-weight: 600; color: #202942;'>Sorry, product description is not available.</p>";
+
 
                     if (is_readable($descriptionFile)) {
                         include_once $descriptionFile;
@@ -37,7 +39,7 @@
                                 <a href="<?= SERVER_NAME ?>form-data.php" target="_self" class="rounded-3 align-self-center px-3 py-2" style="background-color: var(--color-primary); color: white;">Price List...</a>
                             </div>
                         <?php else: ?>
-                            <?php include_once ROOT_PATH . '/#include/Components/PriceList.php'; ?>
+                            <?php include_once ROOT_PATH . '/#include/component/layout/pricelist.php'; ?>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>

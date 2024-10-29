@@ -22,6 +22,6 @@ $current_sub_menu = null;
 $title = "Form Data NPWP";
 
 include_once __DIR__ . '/header.php';
-include_once __DIR__ . '/#include/Components/Navbar.php';
-include_once __DIR__ . '/#include/Components/FormData.php';
+include_once __DIR__ . '/#include/component/layout/navbar.php';
+include_once __DIR__ . '/#include/component/layout/form-data.php';
 include_once __DIR__ . '/footer.php';

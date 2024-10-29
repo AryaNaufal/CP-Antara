@@ -5,7 +5,7 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class=""><a href="<?= SERVER_NAME ?>">Home</a></li>
+                    <li class=""><a href="<?= SERVER_NAME ?>">Beranda</a></li>
                     <span class="mx-2"> > </span>
                     <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $current_menu ?></li>
                 </ol>

@@ -27,11 +27,11 @@ $startIndex = ($page - 1) * $itemsPerPage;
 $articleData = array_slice($articleData, $startIndex, $itemsPerPage);
 
 // Meta data
-$current_menu = "Article";
-$current_sub_menu = NULL;
-$title = "Article";
+$current_menu = "Artikel";
+$current_sub_menu = null;
+$title = "Artikel";
 
 include_once __DIR__ . '/header.php';
-include_once __DIR__ . '/#include/Components/Navbar.php';
-include_once __DIR__ . '/#include/Components/ArticlePage.php';
+include_once __DIR__ . '/#include/component/layout/navbar.php';
+include_once __DIR__ . '/#include/component/article/page/index.php';
 include_once __DIR__ . '/footer.php';
