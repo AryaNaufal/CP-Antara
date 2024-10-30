@@ -22,8 +22,7 @@ $products = $productService->getProducts();
 $mitras = $mitraService->getMitras();
 
 // Get all articles
-$articles = $articleService->getTopHeadlines();
-$articleData = $articles['data'] ?? null;
+$articles = $articleService->getArticles();
 
 // Get all clients
 $clients = $clientService->getClients();

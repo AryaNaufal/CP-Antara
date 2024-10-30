@@ -15,25 +15,19 @@
             <div class="blog-content">
                 <div class="blog-item-box">
                     <div class="row">
-                        <?php if ($articleData !== null && !empty($articleData)): ?>
-                            <?php foreach ($articleData as $item): ?>
-                                <?php
-                                $dateString = $item['isoDate'];
-                                $date = new DateTime($dateString);
-                                $Month = $date->format('M');
-                                $Day = $date->format('d');
-                                ?>
+                        <?php if ($articles !== null && !empty($articles)): ?>
+                            <?php foreach ($articles as $item): ?>
                                 <!-- Single Item -->
                                 <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
                                     <div class="item">
                                         <div class="thumb">
-                                            <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
-                                                <?php if (isset($item['image'])): ?>
-                                                    <img src="<?= htmlspecialchars($item['image']); ?>" alt="Thumb"
+                                            <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>">
+                                                <?php if (isset($item['img'])): ?>
+                                                    <img src="<?= htmlspecialchars($item['img']); ?>" alt="Thumb"
                                                         style="width: 100%; height: 200px; object-fit: cover;">
                                                 <?php endif; ?>
                                             </a>
-                                            <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
+                                            <div class="date"><strong><?= date('d', strtotime($item['created_at'])) ?></strong> <span><?= date('M', strtotime($item['created_at'])) ?></span></div>
                                         </div>
                                         <div class="info">
                                             <div class="meta">
@@ -48,15 +42,15 @@
                                             </div>
                                             <h4
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                                                <a href="<?= htmlspecialchars($item['link']); ?>" target="_blank" aria-label="<?= htmlspecialchars($item['title']); ?>">
-                                                    <?= htmlspecialchars($item['title']); ?>
+                                                <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= htmlspecialchars($item['headlines']); ?>">
+                                                    <?= htmlspecialchars($item['headlines']); ?>
                                                 </a>
                                             </h4>
                                             <p
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
-                                                <?= htmlspecialchars($item['description'] ?? 'No description available.'); ?>
+                                                <?= htmlspecialchars($item['content'] ?? 'No description available.'); ?>
                                             </p>
-                                            <a class="btn circle btn-theme-border btn-sm" href="<?= htmlspecialchars($item['link']); ?>" target="_blank">
+                                            <a class="btn circle btn-theme-border btn-sm" href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>">
                                                 Read More
                                             </a>
                                         </div>

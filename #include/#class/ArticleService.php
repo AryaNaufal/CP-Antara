@@ -4,27 +4,18 @@ namespace App;
 
 class ArticleService
 {
-    public function getTopHeadlines()
+    private $db;
+
+    public function __construct()
     {
-        $url = "https://berita-indo-api-next.vercel.app/api/antara-news/terkini";
+        $this->db = new DB(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+    }
 
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HEADER, true); // Menyertakan header dalam output
-        curl_setopt($ch, CURLOPT_NOBODY, false); // Menyertakan body dalam output
-
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-        curl_close($ch);
-
-        if ($httpCode !== 200) {
-            return null;
-        }
-
-        // Pisahkan header dari body jika diperlukan
-        $body = substr($response, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
-        return json_decode($body, true);
+    public function getArticles(): array
+    {
+        $query = "SELECT id, img, headlines, content, created_at FROM article";
+        $stmt = $this->db->getConnection()->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll();
     }
 }

@@ -15,29 +15,24 @@
     </div>
 
     <div class="row">
-
       <?php
-      if (empty($articleData)):
+      if (empty($articles)):
         echo '<p class="text-center">No articles available.</p>';
       else:
         $count = 0;
-        foreach ($articleData as $item):
+        foreach ($articles as $item):
           if ($count >= 3) {
             break;
           }
           $count++;
 
-          $dateString = $item['isoDate'];
-          $date = new DateTime($dateString);
-          $Month = $date->format('M');
-          $Day = $date->format('d');
       ?>
           <!-- Single item -->
           <div class="single-item col-lg-4 col-md-6 wow fadeInUp" data-wow-defaul="300ms">
             <div class="item">
               <div class="thumb">
-                <a href="<?= $item['link'] ?>" target="_blank"><img src="<?= $item['image'] ?>" alt="Thumb"></a>
-                <div class="date"><strong><?= $Day ?></strong> <span><?= $Month ?></span></div>
+                <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>"><img src="<?= $item['img'] ?>" alt="Thumb"></a>
+                <div class="date"><strong><?= date('d', strtotime($item['created_at'])) ?></strong> <span><?= date('M', strtotime($item['created_at'])) ?></span></div>
               </div>
               <div class="info">
                 <div class="meta">
@@ -50,11 +45,11 @@
                     </li>
                   </ul>
                 </div>
-                <h4>
-                  <a href="<?= $item['link'] ?>" target="_blank" aria-label="<?= $item['title'] ?>"><?= $item['title'] ?></a>
+                <h4 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                  <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= $item['headlines'] ?>"><?= $item['headlines'] ?></a>
                 </h4>
-                <p>
-                  <?= $item['description'] ?? 'No description available.' ?>
+                <p style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                  <?= htmlspecialchars($item['content'] ?? 'No description available.') ?>
                 </p>
               </div>
             </div>
