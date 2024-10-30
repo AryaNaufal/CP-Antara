@@ -19,7 +19,7 @@
           <div class="item">
             <div class="blog-item-box">
               <div class="thumb">
-                <a href="#"><img src="<?= SERVER_NAME . $articleData['img'] ?>" alt="Thumb"></a>
+                <a href="#"><img src="<?= SERVER_NAME . $articleData['img'] ?>" alt="Thumb" class="w-100"></a>
                 <div class="date"><strong><?= date('d', strtotime($articleData['created_at'])) ?></strong> <span><?= date('M', strtotime($articleData['created_at'])) ?></span></div>
               </div>
               <div class="info">

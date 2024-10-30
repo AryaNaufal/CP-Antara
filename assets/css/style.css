@@ -8488,6 +8488,7 @@ a.item.popup-gallery.theme.video-play-button::before {
 	border-radius: 5px;
 	border: 1px solid #e7e7e7;
 	background: #fdfdfd;
+	padding: 30px 30px;
 	height: 120px;
 	width: 280px;
 	object-fit: contain;
