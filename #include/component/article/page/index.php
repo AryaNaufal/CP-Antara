@@ -1,3 +1,16 @@
+<?php
+$articlesPerPage = 6;
+$totalArticles = count($articles);
+$totalPages = ceil($totalArticles / $articlesPerPage);
+
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$page = max(1, min($totalPages, $page));
+
+$offset = ($page - 1) * $articlesPerPage;
+
+$articles = array_slice($articles, $offset, $articlesPerPage);
+?>
+
 <!-- Start Blog
     ============================================= -->
 <section class="blog-area full-blog blog-standard full-blog grid-colum default-padding default-padding-top">
@@ -16,14 +29,19 @@
                 <div class="blog-item-box">
                     <div class="row">
                         <?php if ($articles !== null && !empty($articles)): ?>
-                            <?php foreach ($articles as $item): ?>
+                            <?php
+                            $counter = 0; // Initialize counter
+                            foreach ($articles as $item):
+                                if ($counter >= 6) break; // Limit to 6 items
+                                $counter++; // Increment counter
+                            ?>
                                 <!-- Single Item -->
                                 <div class="col-lg-4 col-md-6 single-item wow fadeInDown" data-wow-defaul="300ms">
                                     <div class="item">
                                         <div class="thumb">
                                             <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>">
                                                 <?php if (isset($item['img'])): ?>
-                                                    <img src="<?= htmlspecialchars($item['img']); ?>" alt="Thumb"
+                                                    <img src="<?= SERVER_NAME . htmlspecialchars($item['img']); ?>" alt="Thumb"
                                                         style="width: 100%; height: 200px; object-fit: cover;">
                                                 <?php endif; ?>
                                             </a>
@@ -57,12 +75,10 @@
                                     </div>
                                 </div>
                                 <!-- End Single Item -->
-
                             <?php endforeach; ?>
                         <?php else: ?>
                             <p>No articles available or there was an error fetching the news.</p>
                         <?php endif; ?>
-
                     </div>
 
                     <!-- Pagination -->
@@ -74,9 +90,11 @@
                                         <li class="page-item"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $page - 1; ?>"><i class="fas fa-angle-double-left"></i></a></li>
                                     <?php endif; ?>
 
-                                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                                        <li class="page-item <?= ($i === $page) ? 'active' : ''; ?>"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $i; ?>" aria-label="<?= $i; ?>"><?= $i; ?></a></li>
-                                    <?php endfor; ?>
+                                    <?php if ($totalPages > 1): ?>
+                                        <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                                            <li class="page-item <?= ($i == $page || ($i == $totalPages && $page == $totalPages)) ? 'active' : ''; ?>"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $i; ?>" aria-label="<?= $i; ?>"><?= $i; ?></a></li>
+                                        <?php endfor; ?>
+                                    <?php endif; ?>
 
                                     <?php if ($page < $totalPages): ?>
                                         <li class="page-item"><a class="page-link" href="<?= SERVER_NAME . 'article/' . $page + 1; ?>"><i class="fas fa-angle-double-right"></i></a></li>
