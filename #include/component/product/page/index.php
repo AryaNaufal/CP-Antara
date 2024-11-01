@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-md-6 gallery-content mt-5">
                 <div class="pl-20 my-4">
-                    <h4 class="fw-bold">Product Kemitraan</h4>
+                    <h4 class="fw-bold">Produk Kemitraan</h4>
                     <div style="background-color: var(--color-primary); width: 100px; height: 2px;"></div>
                 </div>
                 <div class="magnific-mix-gallery masonary">
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-6 gallery-content mt-5">
                 <div class="pl-20 my-4">
-                    <h4 class="fw-bold">Affiliate Product</h4>
+                    <h4 class="fw-bold">Produk Afiliasi</h4>
                     <div style="background-color: var(--color-primary); width: 100px; height: 2px;"></div>
                 </div>
                 <div class="magnific-mix-gallery masonary">
