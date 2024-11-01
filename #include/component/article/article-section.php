@@ -35,16 +35,6 @@
                 <div class="date"><strong><?= date('d', strtotime($item['created_at'])) ?></strong> <span><?= date('M', strtotime($item['created_at'])) ?></span></div>
               </div>
               <div class="info">
-                <div class="meta">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
-                    </li>
-                  </ul>
-                </div>
                 <h4 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                   <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= $item['headlines'] ?>"><?= $item['headlines'] ?></a>
                 </h4>

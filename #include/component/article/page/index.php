@@ -48,16 +48,6 @@ $articles = array_slice($articles, $offset, $articlesPerPage);
                                             <div class="date"><strong><?= date('d', strtotime($item['created_at'])) ?></strong> <span><?= date('M', strtotime($item['created_at'])) ?></span></div>
                                         </div>
                                         <div class="info">
-                                            <div class="meta">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="fas fa-user"></i><?= htmlspecialchars($item['author'] ?? 'Unknown') ?></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fas fa-comments"></i> 27 Comments</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                             <h4
                                                 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                                                 <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= htmlspecialchars($item['headlines']); ?>">
@@ -69,7 +59,7 @@ $articles = array_slice($articles, $offset, $articlesPerPage);
                                                 <?= htmlspecialchars($item['content'] ?? 'No description available.'); ?>
                                             </p>
                                             <a class="btn circle btn-theme-border btn-sm" href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>">
-                                                Read More
+                                                Lihat Selengkapnya
                                             </a>
                                         </div>
                                     </div>

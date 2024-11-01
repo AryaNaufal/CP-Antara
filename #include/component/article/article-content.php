@@ -23,16 +23,6 @@
                 <div class="date"><strong><?= date('d', strtotime($articleData['created_at'])) ?></strong> <span><?= date('M', strtotime($articleData['created_at'])) ?></span></div>
               </div>
               <div class="info">
-                <div class="meta">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fas fa-user"></i> Admin</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
-                    </li>
-                  </ul>
-                </div>
                 <h3>
                   <a href="#" title="<?= $articleData['headlines'] ?>"><?= $articleData['headlines'] ?></a>
                 </h3>
@@ -81,46 +71,10 @@
                 <h4>
                   5 comments
                 </h4>
-                <div class="comments-list">
-                  <div class="commen-item">
-                    <div class="avatar">
-                      <img src="https://i.pinimg.com/564x/28/c2/0b/28c20b3bf4e1a48334b2278d3c7fb447.jpg" alt="Author">
-                    </div>
-                    <div class="content">
-                      <div class="title">
-                        <h5>Jonathom Doe</h5>
-                        <span>28 Aug, 2022</span>
-                      </div>
-                      <p>
-                        Year kept on over so as this of. She steepest doubtful betrayed formerly him. Active one called uneasy our seeing see cousin tastes its. Ye am it formed indeed agreed relied piqued. Met packages shy for kindness.
-                      </p>
-                      <div class="comments-info">
-                        <a href=""><i class="fa fa-reply"></i>Reply</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="commen-item reply">
-                    <div class="avatar">
-                      <img src="https://i.pinimg.com/564x/28/c2/0b/28c20b3bf4e1a48334b2278d3c7fb447.jpg" alt="Author">
-                    </div>
-                    <div class="content">
-                      <div class="title">
-                        <h5>Spart Lee</h5>
-                        <span>17 Feb, 2022</span>
-                      </div>
-                      <p>
-                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
-                      </p>
-                      <div class="comments-info">
-                        <a href=""><i class="fa fa-reply"></i>Reply</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div class="comments-form">
                 <div class="title">
-                  <h4>Leave a comments</h4>
+                  <h4>Tinggalkan Komentar</h4>
                 </div>
                 <form action="#" class="contact-comments">
                   <div class="row">
@@ -139,11 +93,11 @@
                     <div class="col-md-12">
                       <div class="form-group comments">
                         <!-- Comment -->
-                        <textarea class="form-control" placeholder="Comment"></textarea>
+                        <textarea class="form-control" placeholder="Komentar"></textarea>
                       </div>
                       <div class="form-group full-width submit">
                         <button type="submit">
-                          Post Comments
+                          Kirim
                         </button>
                       </div>
                     </div>
@@ -168,7 +122,7 @@
           <aside>
             <div class="sidebar-item recent-post">
               <div class="title">
-                <h4>Recent Post</h4>
+                <h4>Postingan Terbaru</h4>
               </div>
               <ul>
                 <?php foreach (array_slice($articles, -3) as $articleData): ?>
@@ -190,7 +144,7 @@
             </div>
             <div class="sidebar-item category">
               <div class="title">
-                <h4>category list</h4>
+                <h4>daftar kategori</h4>
               </div>
               <div class="sidebar-info">
                 <ul>
@@ -214,7 +168,7 @@
             </div>
             <div class="sidebar-item tags">
               <div class="title">
-                <h4>tags</h4>
+                <h4>tagar</h4>
               </div>
               <div class="sidebar-info">
                 <ul>
