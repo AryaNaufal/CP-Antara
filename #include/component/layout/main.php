@@ -1,6 +1,15 @@
 <!-- Start Banner 
       ============================================= -->
-<section class="banner-area text-light bg-gradient banner-style-five text-default" id="home">
+<section class="overflow-hidden banner-area text-light text-default" id="home">
+    <div style="position: absolute; width: 100%; height: 100%; overflow: hidden;">
+        <video id="background-video" controls autoplay muted loop style="width: 100%; height: 100%; object-fit: cover; z-index: -1; position: absolute; left: 0; transform: scale(1.3);">
+            <source src="<?= SERVER_NAME ?>assets/img/antara/Bumper web Komersil 2.mp4" type="video/mp4" media="screen and (min-width:768px)">
+            <source src="<?= SERVER_NAME ?>assets/img/antara/Bumper web Komersil 2.mp4" type="video/mp4">
+            <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
 
     <div class="animated-wave">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -18,27 +27,32 @@
     </div>
 
     <div class="container">
-        <div class="double-items">
+        <div class="double-items" style="min-height: 75vh; align-content: space-evenly;">
             <div class="row align-center">
-
                 <div class="col-lg-6 info">
-                    <?php if (isset($_SESSION['user_id'])): ?>
-                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] ?> 👋</p>
-                    <?php else: ?>
-                        <p class="wow fadeInLeft" style="color: white; margin: 0; font-weight: 500;">Hi, <?= $_SESSION['user_name'] = "Guest-" . rand(100, 10000) ?> 👋</p>
-                    <?php endif; ?>
-
-                    <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Menjembatani Kesenjangan Digital: Bersama, Mari Pimpin Masa Depan Digital Indonesia</h2>
-                    <p class="wow fadeInLeft" data-wow-delay="500ms">
-                        Menawarkan solusi multimedia berkualitas global, memimpin era baru dalam industri ini. Kami berkomitmen untuk memberikan produk berkualitas tinggi, menjadi pilihan utama bagi pengguna yang mencari kualitas internasional. </p>
+                    <h2 class="wow fadeInLeft" data-wow-defaul="300ms" style="text-align: left;">Bersama, Mari Pimpin Masa Depan Digital Indonesia</h2>
                 </div>
-
-                <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                    <img src="assets/img/antara/home_landing_illustration.png" alt="Thumb">
-                </div>
-
             </div>
         </div>
     </div>
 </section>
 <!-- End Banner -->
+<button id="sound-button" onclick="toggleSound()" style="position: fixed; bottom: 100px; right: 30px; width: fit-content; z-index: 10; background-color: rgba(0, 0, 0, 0.5); border: 2px solid #fff; border-radius: 100%; padding: 10px 14px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s;">
+    <span style="font-weight: bold; color: #333;"><?= isset($_COOKIE['mute']) ? '🔇' : '🔊' ?></span>
+</button>
+<script>
+    function toggleSound() {
+        var video = document.getElementById('background-video');
+        video.muted = !video.muted;
+    }
+
+    document.getElementById('sound-button').addEventListener('click', function() {
+        if (this.innerText == '🔊') {
+            document.cookie = "mute=1";
+            this.innerText = '🔇';
+        } else {
+            document.cookie = "mute=0";
+            this.innerText = '🔊';
+        }
+    });
+</script>
