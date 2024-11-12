@@ -97,11 +97,3 @@ $menuItems = [
   </nav>
   <!-- End Navigation -->
 </header>
-
-
-<script>
-  const navbar = document.getElementById('nav');
-  <?php
-  $newUrl = str_replace(SERVER_NAME, '', $_SERVER['REQUEST_URI']);
-  ?>
-</script>

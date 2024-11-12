@@ -10,3 +10,28 @@
 </body>
 
 </html>
+
+
+
+<script>
+  const navbar = document.getElementById('nav');
+
+  <?php
+  $newUrl = str_replace(SERVER_NAME, '', $_SERVER['REQUEST_URI']);
+  ?>
+
+  function toggleSound() {
+    var video = document.getElementById('background-video');
+    video.muted = !video.muted;
+  }
+
+  document.getElementById('sound-button').addEventListener('click', function() {
+    if (this.innerText == '🔊') {
+      document.cookie = "mute=1";
+      this.innerText = '🔇';
+    } else {
+      document.cookie = "mute=0";
+      this.innerText = '🔊';
+    }
+  });
+</script>
