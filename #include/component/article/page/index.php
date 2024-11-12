@@ -20,7 +20,7 @@ $articles = array_slice($articles, $offset, $articlesPerPage);
                 <ol class="breadcrumb">
                     <li class=""><a href="<?= SERVER_NAME ?>">Beranda</a></li>
                     <span class="mx-2"> > </span>
-                    <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $current_menu ?></li>
+                    <li aria-current="page" class="fw-bold" style="color: var(--color-primary);"><?= $current_menu ?></li>
                 </ol>
             </nav>
         </div>
@@ -49,13 +49,15 @@ $articles = array_slice($articles, $offset, $articlesPerPage);
                                         </div>
                                         <div class="info">
                                             <h4
-                                                style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                class="overflow-hidden"
+                                                style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                                                 <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= htmlspecialchars($item['headlines']); ?>">
                                                     <?= htmlspecialchars($item['headlines']); ?>
                                                 </a>
                                             </h4>
                                             <p
-                                                style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                                class="overflow-hidden"
+                                                style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                                                 <?= htmlspecialchars($item['content'] ?? 'No description available.'); ?>
                                             </p>
                                             <a class="btn circle btn-theme-border btn-sm" href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>">

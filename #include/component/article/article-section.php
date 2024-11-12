@@ -35,10 +35,10 @@
                 <div class="date"><strong><?= date('d', strtotime($item['created_at'])) ?></strong> <span><?= date('M', strtotime($item['created_at'])) ?></span></div>
               </div>
               <div class="info">
-                <h4 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                <h4 class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                   <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($item['headlines']); ?>" aria-label="<?= $item['headlines'] ?>"><?= $item['headlines'] ?></a>
                 </h4>
-                <p style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                <p class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                   <?= htmlspecialchars($item['content'] ?? 'No description available.') ?>
                 </p>
               </div>
@@ -48,11 +48,11 @@
         <?php endforeach; ?>
       <?php endif; ?>
 
-      <div style="display: flex; justify-content: center">
+      <div class="d-flex justify-content-center">
         <!-- Start Atribute Navigation -->
-        <div class="wow fadeInUp" style="background-color: var(--color-primary);  padding: 10px 20px; border-radius: 5px; width: max-content;">
+        <div class="wow fadeInUp" style="background-color: var(--color-primary); padding: 10px 20px; border-radius: 5px;">
           <ul>
-            <li class="button"><a href="<?php SERVER_NAME ?>article" style="color: white;">Lihat Semua</a></li>
+            <li class="button"><a href="<?php SERVER_NAME ?>article" class="text-white">Lihat Semua</a></li>
           </ul>
         </div>
         <!-- End Atribute Navigation -->

@@ -9,7 +9,7 @@
           <span class="mx-2"> > </span>
           <li class=""><a href="<?= SERVER_NAME . "article" ?>">Artikel</a></li>
           <span class="mx-2"> > </span>
-          <li aria-current="page" style="font-weight: 600; color: var(--color-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 300px;"><?= $current_menu ?></li>
+          <li aria-current="page" class="fw-bold overflow-hidden text-truncate text-truncate" style="color: var(--color-primary); max-width: 300px;"><?= $current_menu ?></li>
         </ol>
       </nav>
     </div>
@@ -51,13 +51,13 @@
             <?php if (isset($previousArticle)): ?>
               <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($previousArticle['headlines']); ?>" style="max-width: 200px;">
                 <i class="fas fa-angle-double-left"></i> Previous Post
-                <h5 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><?= htmlspecialchars($previousArticle['headlines']); ?></h5>
+                <h5 class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><?= htmlspecialchars($previousArticle['headlines']); ?></h5>
               </a>
             <?php endif; ?>
             <?php if (isset($nextArticle)): ?>
               <a href="<?= SERVER_NAME . "article/" . $Lib->seoTitle($nextArticle['headlines']); ?>" style="max-width: 200px;">
                 Next Post <i class="fas fa-angle-double-right"></i>
-                <h5 style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><?= htmlspecialchars($nextArticle['headlines']); ?></h5>
+                <h5 class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><?= htmlspecialchars($nextArticle['headlines']); ?></h5>
               </a>
             <?php endif; ?>
           </div>
@@ -111,9 +111,9 @@
         <!-- Start Sidebar -->
         <div class="sidebar wow fadeInLeft col-lg-4 col-md-12" style="
           position: sticky;
+          overflow-y: auto;
           top: 135px;
           max-height: calc(97vh - 135px);
-          overflow-y: auto;
           scrollbar-width: thin;
           scrollbar-color: var(--color-primary) var(--color-background);
           padding-top: 20px;

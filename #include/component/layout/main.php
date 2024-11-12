@@ -1,8 +1,8 @@
 <!-- Start Banner 
       ============================================= -->
 <section class="overflow-hidden banner-area text-light text-default" id="home">
-    <div style="position: absolute; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
-        <video id="background-video" autoplay muted loop style="width: 100%; height: 100%; object-fit: cover; left: 0; transform: scale(1.3); filter: brightness(0.8)">
+    <div class="overflow-hidden position-absolute w-100 h-100" style="z-index: -1;">
+        <video id="background-video" autoplay muted loop class="w-100 h-100 left-0" style="object-fit: cover; transform: scale(1.3); filter: brightness(0.8)">
             <source src="<?= SERVER_NAME ?>assets/img/antara/Bumper web Komersil 2.mp4" type="video/mp4" media="screen and (min-width:768px)">
             <source src="<?= SERVER_NAME ?>assets/img/antara/Bumper web Komersil 2.mp4" type="video/mp4">
             <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
@@ -30,13 +30,13 @@
         <div class="double-items" style="min-height: 75vh; align-content: space-evenly;">
             <div class="row align-center">
                 <div class="col-lg-6 info">
-                    <h2 class="wow fadeInLeft" data-wow-defaul="300ms" style="text-align: left;">Bersama, Mari Pimpin Masa Depan Digital Indonesia</h2>
+                    <h2 class="wow fadeInLeft text-center text-lg-start" data-wow-defaul="300ms">Bersama, Mari Pimpin Masa Depan Digital Indonesia</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End Banner -->
-<button id="sound-button" onclick="toggleSound()" style="position: fixed; bottom: 100px; right: 30px; width: fit-content; z-index: 10; background-color: rgba(0, 0, 0, 0.5); border: 2px solid #fff; border-radius: 100%; padding: 10px 14px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s;">
-    <span style="font-weight: bold; color: #333;"><?= isset($_COOKIE['mute']) ? '🔇' : '🔊' ?></span>
+<button id="sound-button" onclick="toggleSound()" class="position-fixed rounded-circle" style="bottom: 100px; right: 30px; width: fit-content; z-index: 10; background-color: rgba(0, 0, 0, 0.5); border: 2px solid #fff; padding: 10px 14px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s;">
+    <span class="fw-bold" style="color: #333;"><?= isset($_COOKIE['mute']) ? '🔇' : '🔊' ?></span>
 </button>
