@@ -3,7 +3,7 @@
 
   <div class="row gap-5 mx-auto my-5 pb-5 d-flex justify-content-center align-items-center">
     <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-      <img src="<?= SERVER_NAME ?>assets/img/antara/ProductDescription/AntaraHeritageCenter/ahc-picture-1.png" alt="" class="rounded-1">
+      <iframe width="560" height="204" src="https://www.youtube.com/embed/COWliPrfdKM?si=dKMXIrkoQytz1sh-&vq=hd720" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="col-sm-12 col-lg-6 d-flex flex-wrap">
