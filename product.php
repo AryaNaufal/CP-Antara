@@ -42,7 +42,7 @@ if (empty($productId)) {
 
     include_once __DIR__ . '/header.php';
     include_once __DIR__ . '/#include/component/layout/navbar.php';
-    include_once __DIR__ . '/#include/component/product/page/index.php';
+    include_once __DIR__ . '/#include/component/product/product-list.php';
     include_once __DIR__ . '/footer.php';
 } else {
     $basename = basename($_SERVER['REQUEST_URI']);
