@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  # PHP service
+  php:
+    build: .
+    container_name: php-container
+    volumes:
+      - .:/var/www/html/CP-Antara
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  # MySQL service
+  db:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: cp_antara
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./#include/cp_antara.sql:/docker-entrypoint-initdb.d/cp_antara.sql
+    networks:
+      - app-network
+
+volumes:
+  db-data:
+
+networks:
+  app-network:
+    driver: bridge
