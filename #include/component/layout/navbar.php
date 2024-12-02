@@ -26,7 +26,7 @@ $menuItems = [
   ],
   [
     'title' => 'Kontak',
-    'url' => SERVER_NAME . '#footer',
+    'url' => SERVER_NAME . 'contact',
   ],
 ];
 ?>
