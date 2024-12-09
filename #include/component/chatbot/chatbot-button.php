@@ -13,7 +13,7 @@ if (!isset($_SESSION['chat_history'])) {
   </h2>
   <?php if (empty($_SESSION['chat_name']) || empty($_SESSION['chat_email'])): ?>
     <div class="text-center" style="height: 300px; padding: 10px">
-      <form action="http://localhost/CP-Antara/chatbot/chatbot.php" method="get" class="d-flex flex-column gap-3 h-100 justify-content-between">
+      <form action=<?= SERVER_NAME . "chatbot/chatbot.php" ?> method="get" class="d-flex flex-column gap-3 h-100 justify-content-between">
         <div class="d-flex flex-column gap-3">
           <input type="text" name="name" placeholder="Nama:" autocomplete="off" class="rounded-3 px-2" required>
           <input type="email" name="email" placeholder="Email:" autocomplete="off" class="rounded-3 px-2" required>

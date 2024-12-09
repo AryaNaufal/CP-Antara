@@ -32,8 +32,6 @@ $sisaProduct = array_filter($products, function ($product) use ($mitraProduct, $
     return !in_array($product, $excludedProducts);
 });
 
-echo "<script>console.log(" . json_encode($sisaProduct) . ");</script>";
-
 if (empty($productId)) {
     // Meta data
     $current_menu = "Produk";
