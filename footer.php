@@ -25,7 +25,7 @@
     video.muted = !video.muted;
   }
 
-  document.getElementById('sound-button').addEventListener('click', function() {
+  document.getElementById('sound-button')?.addEventListener('click', function() {
     if (this.innerText == '🔊') {
       document.cookie = "mute=1";
       this.innerText = '🔇';
