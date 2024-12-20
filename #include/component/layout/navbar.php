@@ -2,15 +2,15 @@
 $menuItems = [
   [
     'title' => 'Beranda',
-    'url' => SERVER_NAME . '#home',
+    'url' => SERVER_NAME,
   ],
   [
     'title' => 'Publikasi',
-    'url' => SERVER_NAME . '#article',
+    'url' => SERVER_NAME . 'article',
   ],
   [
     'title' => 'Produk',
-    'url' => SERVER_NAME . '#product',
+    'url' => SERVER_NAME . 'product',
   ],
   [
     'title' => 'Mitra',
@@ -32,7 +32,7 @@ $menuItems = [
 ?>
 <header>
   <!-- Start Navigation -->
-  <nav class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white " id="nav">
+  <nav class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white" id="nav">
 
     <div class="container d-flex justify-content-between align-items-center">
 
@@ -57,8 +57,9 @@ $menuItems = [
 
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
           <?php foreach ($menuItems as $menuItem): ?>
+
             <li>
-              <a class="smooth-menu" href="<?= $menuItem['url'] ?>" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
+              <a class="smooth-menu" style=" <?= (strpos($menuItem['url'], '#') !== false) ? ((parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === '/') ? 'color: var(--color-primary);' : '') : ((parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === parse_url($menuItem['url'], PHP_URL_PATH)) ? 'color: var(--color-primary);' : ''); ?>" href="<?= $menuItem['url'] ?>" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
             </li>
           <?php endforeach; ?>
           <li>
