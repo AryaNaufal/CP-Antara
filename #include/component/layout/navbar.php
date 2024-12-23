@@ -57,9 +57,12 @@ $menuItems = [
 
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
           <?php foreach ($menuItems as $menuItem): ?>
-
             <li>
-              <a class="smooth-menu" style=" <?= (strpos($menuItem['url'], '#') !== false) ? ((parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === '/') ? 'color: var(--color-primary);' : '') : ((parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === parse_url($menuItem['url'], PHP_URL_PATH)) ? 'color: var(--color-primary);' : ''); ?>" href="<?= $menuItem['url'] ?>" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
+              <?php if ($current_menu == $menuItem['title']): ?>
+                <a class="smooth-menu" href="<?= $menuItem['url'] ?>" style="color: var(--color-primary)" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
+              <?php else: ?>
+                <a class="smooth-menu" href="<?= $menuItem['url'] ?>" aria-label="<?= $menuItem['title'] ?>"><?= $menuItem['title'] ?></a>
+              <?php endif; ?>
             </li>
           <?php endforeach; ?>
           <li>

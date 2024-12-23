@@ -10,7 +10,7 @@
                         <span class="mx-2"> > </span>
                         <li class=""><a href="<?= SERVER_NAME . "product" ?>">Produk</a></li>
                         <span class="mx-2"> > </span>
-                        <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $title ?></li>
+                        <li aria-current="page" style="font-weight: 600; color: var(--color-primary);"><?= $current_sub_menu ?></li>
                     </ol>
                 </nav>
             </div>

@@ -9,7 +9,7 @@
           <span class="mx-2"> > </span>
           <li class=""><a href="<?= SERVER_NAME . "article" ?>">Artikel</a></li>
           <span class="mx-2"> > </span>
-          <li aria-current="page" class="fw-bold overflow-hidden text-truncate text-truncate" style="color: var(--color-primary); max-width: 300px;"><?= $current_menu ?></li>
+          <li aria-current="page" class="fw-bold overflow-hidden text-truncate text-truncate" style="color: var(--color-primary); max-width: 300px;"><?= $current_sub_menu ?></li>
         </ol>
       </nav>
     </div>

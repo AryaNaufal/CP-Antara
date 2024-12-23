@@ -60,8 +60,8 @@ if (empty($productId)) {
     }
 
     // Meta data
-    $current_menu =  $item['name'] ?? null;
-    $current_sub_menu = null;
+    $current_menu =  "Produk";
+    $current_sub_menu = $item['name'] ?? null;
     $title = $item['name'] ?? null;
 
     include_once __DIR__ . '/header.php';

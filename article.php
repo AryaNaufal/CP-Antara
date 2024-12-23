@@ -24,17 +24,19 @@ $totalItems = isset($articles['total']) ? $articles['total'] : 0;
 $totalPages = ceil($totalItems / $itemsPerPage); // Bulatkan halaman ke atas supaya total items sesuai
 
 // Meta data
-$current_menu = "Artikel";
+$current_menu = "Publikasi";
 $current_sub_menu = null;
-$title = "Artikel";
+$title = "Publikasi";
 
 $uri_parts = explode('/', $_SERVER['REQUEST_URI']);
 
 foreach ($articles as $article) {
   $articleData = $article;
   if (end($uri_parts) === $Lib->seoTitle($articleData['headlines'])) {
+    $current_menu = "Publikasi";
+    $current_sub_menu = $articleData['headlines'];
     $title = $articleData['headlines'];
-    $current_menu = $articleData['headlines'];
+
     include_once __DIR__ . '/header.php';
     include_once __DIR__ . '/#include/component/layout/navbar.php';
     include_once __DIR__ . '/#include/component/article/article-content.php';
