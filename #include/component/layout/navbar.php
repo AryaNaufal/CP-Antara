@@ -22,7 +22,7 @@ $menuItems = [
   ],
   [
     'title' => 'Tentang Kami',
-    'url' => SERVER_NAME . '#about',
+    'url' => SERVER_NAME . 'about',
   ],
   [
     'title' => 'Kontak',
