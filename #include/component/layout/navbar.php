@@ -14,11 +14,11 @@ $menuItems = [
   ],
   [
     'title' => 'Mitra',
-    'url' => SERVER_NAME . '#partner',
+    'url' => SERVER_NAME . 'mitra',
   ],
   [
     'title' => 'Klien',
-    'url' => SERVER_NAME . '#client',
+    'url' => SERVER_NAME . 'klien',
   ],
   [
     'title' => 'Tentang Kami',
